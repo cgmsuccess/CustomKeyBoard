@@ -15,37 +15,37 @@
 		F7A264B2218EFE9E00674D36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264B1218EFE9E00674D36 /* main.m */; };
 		F7A264BC218EFE9E00674D36 /* XMTXCustomKeyBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264BB218EFE9E00674D36 /* XMTXCustomKeyBoardTests.m */; };
 		F7A264C7218EFE9E00674D36 /* XMTXCustomKeyBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264C6218EFE9E00674D36 /* XMTXCustomKeyBoardUITests.m */; };
-		F7A26502218EFEB500674D36 /* XMBasekeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264D8218EFEB500674D36 /* XMBasekeyBoardView.m */; };
-		F7A26503218EFEB500674D36 /* UIView+XMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264DB218EFEB500674D36 /* UIView+XMFrame.m */; };
-		F7A26504218EFEB500674D36 /* XMNumberkeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264DE218EFEB500674D36 /* XMNumberkeyBoard.m */; };
-		F7A26505218EFEB500674D36 /* XMWordKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264E0218EFEB500674D36 /* XMWordKeyBoardView.m */; };
-		F7A26506218EFEB500674D36 /* XMNumStrongKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264E3218EFEB500674D36 /* XMNumStrongKeyBoard.m */; };
-		F7A26507218EFEB500674D36 /* XMKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264E5218EFEB500674D36 /* XMKeyBoardView.m */; };
-		F7A26508218EFEB500674D36 /* emoji_touch.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264E8218EFEB500674D36 /* emoji_touch.png */; };
-		F7A26509218EFEB500674D36 /* c_chaKeyboardButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264E9218EFEB500674D36 /* c_chaKeyboardButtonSel.png */; };
-		F7A2650A218EFEB500674D36 /* c_character_keyboardSwitchButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264EA218EFEB500674D36 /* c_character_keyboardSwitchButton@2x.png */; };
-		F7A2650B218EFEB500674D36 /* c_chaKeyboardShiftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264EB218EFEB500674D36 /* c_chaKeyboardShiftButton.png */; };
-		F7A2650C218EFEB500674D36 /* c_chaKeyboardShiftButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264EC218EFEB500674D36 /* c_chaKeyboardShiftButtonSel.png */; };
-		F7A2650D218EFEB500674D36 /* CXXshift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264ED218EFEB500674D36 /* CXXshift@2x.png */; };
-		F7A2650E218EFEB500674D36 /* c_character_keyboardDeleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264EE218EFEB500674D36 /* c_character_keyboardDeleteButton.png */; };
-		F7A2650F218EFEB500674D36 /* c_character_keyboardSwitchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264EF218EFEB500674D36 /* c_character_keyboardSwitchButton.png */; };
-		F7A26510218EFEB500674D36 /* c_character_keyboardDeleteButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F0218EFEB500674D36 /* c_character_keyboardDeleteButtonSel.png */; };
-		F7A26511218EFEB500674D36 /* newdelete.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F1218EFEB500674D36 /* newdelete.png */; };
-		F7A26512218EFEB500674D36 /* c_character_keyboardSwitchButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F2218EFEB500674D36 /* c_character_keyboardSwitchButtonSel@2x.png */; };
-		F7A26513218EFEB500674D36 /* c_character_keyboardDeleteButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F3218EFEB500674D36 /* c_character_keyboardDeleteButtonSel@2x.png */; };
-		F7A26514218EFEB500674D36 /* c_chaKeyboardShiftButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F4218EFEB500674D36 /* c_chaKeyboardShiftButtonSel@2x.png */; };
-		F7A26515218EFEB500674D36 /* newcapsLock.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F5218EFEB500674D36 /* newcapsLock.png */; };
-		F7A26516218EFEB500674D36 /* emoji_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F6218EFEB500674D36 /* emoji_touch@2x.png */; };
-		F7A26517218EFEB500674D36 /* newdelete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F7218EFEB500674D36 /* newdelete@2x.png */; };
-		F7A26518218EFEB500674D36 /* c_chaKeyboardShiftButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F8218EFEB500674D36 /* c_chaKeyboardShiftButton@2x.png */; };
-		F7A26519218EFEB500674D36 /* c_chaKeyboardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264F9218EFEB500674D36 /* c_chaKeyboardButton.png */; };
-		F7A2651A218EFEB500674D36 /* newdelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264FA218EFEB500674D36 /* newdelete@3x.png */; };
-		F7A2651B218EFEB500674D36 /* c_chaKeyboardButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264FB218EFEB500674D36 /* c_chaKeyboardButtonSel@2x.png */; };
-		F7A2651C218EFEB500674D36 /* c_character_keyboardDeleteButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264FC218EFEB500674D36 /* c_character_keyboardDeleteButton@2x.png */; };
-		F7A2651D218EFEB500674D36 /* newcapsLock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264FD218EFEB500674D36 /* newcapsLock@2x.png */; };
-		F7A2651E218EFEB500674D36 /* c_character_keyboardSwitchButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264FE218EFEB500674D36 /* c_character_keyboardSwitchButtonSel.png */; };
-		F7A2651F218EFEB500674D36 /* c_chaKeyboardButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A264FF218EFEB500674D36 /* c_chaKeyboardButton@2x.png */; };
-		F7A26520218EFEB500674D36 /* newcapsLock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26500218EFEB500674D36 /* newcapsLock@3x.png */; };
+		F7A2654F218F0AFF00674D36 /* XMBasekeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A26525218F0AFF00674D36 /* XMBasekeyBoardView.m */; };
+		F7A26550218F0AFF00674D36 /* UIView+XMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A26528218F0AFF00674D36 /* UIView+XMFrame.m */; };
+		F7A26551218F0AFF00674D36 /* XMNumberkeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2652B218F0AFF00674D36 /* XMNumberkeyBoard.m */; };
+		F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2652D218F0AFF00674D36 /* XMWordKeyBoardView.m */; };
+		F7A26553218F0AFF00674D36 /* XMNumStrongKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A26530218F0AFF00674D36 /* XMNumStrongKeyBoard.m */; };
+		F7A26554218F0AFF00674D36 /* XMKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */; };
+		F7A26555218F0AFF00674D36 /* emoji_touch.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26535218F0AFF00674D36 /* emoji_touch.png */; };
+		F7A26556218F0AFF00674D36 /* c_chaKeyboardButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26536218F0AFF00674D36 /* c_chaKeyboardButtonSel.png */; };
+		F7A26557218F0AFF00674D36 /* c_character_keyboardSwitchButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26537218F0AFF00674D36 /* c_character_keyboardSwitchButton@2x.png */; };
+		F7A26558218F0AFF00674D36 /* c_chaKeyboardShiftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26538218F0AFF00674D36 /* c_chaKeyboardShiftButton.png */; };
+		F7A26559218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26539218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel.png */; };
+		F7A2655A218F0AFF00674D36 /* CXXshift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2653A218F0AFF00674D36 /* CXXshift@2x.png */; };
+		F7A2655B218F0AFF00674D36 /* c_character_keyboardDeleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2653B218F0AFF00674D36 /* c_character_keyboardDeleteButton.png */; };
+		F7A2655C218F0AFF00674D36 /* c_character_keyboardSwitchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2653C218F0AFF00674D36 /* c_character_keyboardSwitchButton.png */; };
+		F7A2655D218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2653D218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel.png */; };
+		F7A2655E218F0AFF00674D36 /* newdelete.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2653E218F0AFF00674D36 /* newdelete.png */; };
+		F7A2655F218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2653F218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel@2x.png */; };
+		F7A26560218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26540218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel@2x.png */; };
+		F7A26561218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26541218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel@2x.png */; };
+		F7A26562218F0AFF00674D36 /* newcapsLock.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26542218F0AFF00674D36 /* newcapsLock.png */; };
+		F7A26563218F0AFF00674D36 /* emoji_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26543218F0AFF00674D36 /* emoji_touch@2x.png */; };
+		F7A26564218F0AFF00674D36 /* newdelete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26544218F0AFF00674D36 /* newdelete@2x.png */; };
+		F7A26565218F0AFF00674D36 /* c_chaKeyboardShiftButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26545218F0AFF00674D36 /* c_chaKeyboardShiftButton@2x.png */; };
+		F7A26566218F0AFF00674D36 /* c_chaKeyboardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26546218F0AFF00674D36 /* c_chaKeyboardButton.png */; };
+		F7A26567218F0AFF00674D36 /* newdelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26547218F0AFF00674D36 /* newdelete@3x.png */; };
+		F7A26568218F0AFF00674D36 /* c_chaKeyboardButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26548218F0AFF00674D36 /* c_chaKeyboardButtonSel@2x.png */; };
+		F7A26569218F0AFF00674D36 /* c_character_keyboardDeleteButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A26549218F0AFF00674D36 /* c_character_keyboardDeleteButton@2x.png */; };
+		F7A2656A218F0AFF00674D36 /* newcapsLock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2654A218F0AFF00674D36 /* newcapsLock@2x.png */; };
+		F7A2656B218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2654B218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel.png */; };
+		F7A2656C218F0AFF00674D36 /* c_chaKeyboardButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2654C218F0AFF00674D36 /* c_chaKeyboardButton@2x.png */; };
+		F7A2656D218F0AFF00674D36 /* newcapsLock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A2654D218F0AFF00674D36 /* newcapsLock@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,44 +82,44 @@
 		F7A264C2218EFE9E00674D36 /* XMTXCustomKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMTXCustomKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A264C6218EFE9E00674D36 /* XMTXCustomKeyBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMTXCustomKeyBoardUITests.m; sourceTree = "<group>"; };
 		F7A264C8218EFE9E00674D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7A264D7218EFEB500674D36 /* XMBasekeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMBasekeyBoardView.h; sourceTree = "<group>"; };
-		F7A264D8218EFEB500674D36 /* XMBasekeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMBasekeyBoardView.m; sourceTree = "<group>"; };
-		F7A264DA218EFEB500674D36 /* UIView+XMFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMFrame.h"; sourceTree = "<group>"; };
-		F7A264DB218EFEB500674D36 /* UIView+XMFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMFrame.m"; sourceTree = "<group>"; };
-		F7A264DD218EFEB500674D36 /* XMNumberkeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNumberkeyBoard.h; sourceTree = "<group>"; };
-		F7A264DE218EFEB500674D36 /* XMNumberkeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNumberkeyBoard.m; sourceTree = "<group>"; };
-		F7A264E0218EFEB500674D36 /* XMWordKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMWordKeyBoardView.m; sourceTree = "<group>"; };
-		F7A264E1218EFEB500674D36 /* XMWordKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMWordKeyBoardView.h; sourceTree = "<group>"; };
-		F7A264E3218EFEB500674D36 /* XMNumStrongKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNumStrongKeyBoard.m; sourceTree = "<group>"; };
-		F7A264E4218EFEB500674D36 /* XMNumStrongKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNumStrongKeyBoard.h; sourceTree = "<group>"; };
-		F7A264E5218EFEB500674D36 /* XMKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMKeyBoardView.m; sourceTree = "<group>"; };
-		F7A264E6218EFEB500674D36 /* XMKeyBoardHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMKeyBoardHeader.h; sourceTree = "<group>"; };
-		F7A264E8218EFEB500674D36 /* emoji_touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji_touch.png; sourceTree = "<group>"; };
-		F7A264E9218EFEB500674D36 /* c_chaKeyboardButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardButtonSel.png; sourceTree = "<group>"; };
-		F7A264EA218EFEB500674D36 /* c_character_keyboardSwitchButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardSwitchButton@2x.png"; sourceTree = "<group>"; };
-		F7A264EB218EFEB500674D36 /* c_chaKeyboardShiftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardShiftButton.png; sourceTree = "<group>"; };
-		F7A264EC218EFEB500674D36 /* c_chaKeyboardShiftButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardShiftButtonSel.png; sourceTree = "<group>"; };
-		F7A264ED218EFEB500674D36 /* CXXshift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CXXshift@2x.png"; sourceTree = "<group>"; };
-		F7A264EE218EFEB500674D36 /* c_character_keyboardDeleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardDeleteButton.png; sourceTree = "<group>"; };
-		F7A264EF218EFEB500674D36 /* c_character_keyboardSwitchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardSwitchButton.png; sourceTree = "<group>"; };
-		F7A264F0218EFEB500674D36 /* c_character_keyboardDeleteButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardDeleteButtonSel.png; sourceTree = "<group>"; };
-		F7A264F1218EFEB500674D36 /* newdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newdelete.png; sourceTree = "<group>"; };
-		F7A264F2218EFEB500674D36 /* c_character_keyboardSwitchButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardSwitchButtonSel@2x.png"; sourceTree = "<group>"; };
-		F7A264F3218EFEB500674D36 /* c_character_keyboardDeleteButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardDeleteButtonSel@2x.png"; sourceTree = "<group>"; };
-		F7A264F4218EFEB500674D36 /* c_chaKeyboardShiftButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardShiftButtonSel@2x.png"; sourceTree = "<group>"; };
-		F7A264F5218EFEB500674D36 /* newcapsLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newcapsLock.png; sourceTree = "<group>"; };
-		F7A264F6218EFEB500674D36 /* emoji_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_touch@2x.png"; sourceTree = "<group>"; };
-		F7A264F7218EFEB500674D36 /* newdelete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newdelete@2x.png"; sourceTree = "<group>"; };
-		F7A264F8218EFEB500674D36 /* c_chaKeyboardShiftButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardShiftButton@2x.png"; sourceTree = "<group>"; };
-		F7A264F9218EFEB500674D36 /* c_chaKeyboardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardButton.png; sourceTree = "<group>"; };
-		F7A264FA218EFEB500674D36 /* newdelete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newdelete@3x.png"; sourceTree = "<group>"; };
-		F7A264FB218EFEB500674D36 /* c_chaKeyboardButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardButtonSel@2x.png"; sourceTree = "<group>"; };
-		F7A264FC218EFEB500674D36 /* c_character_keyboardDeleteButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardDeleteButton@2x.png"; sourceTree = "<group>"; };
-		F7A264FD218EFEB500674D36 /* newcapsLock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcapsLock@2x.png"; sourceTree = "<group>"; };
-		F7A264FE218EFEB500674D36 /* c_character_keyboardSwitchButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardSwitchButtonSel.png; sourceTree = "<group>"; };
-		F7A264FF218EFEB500674D36 /* c_chaKeyboardButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardButton@2x.png"; sourceTree = "<group>"; };
-		F7A26500218EFEB500674D36 /* newcapsLock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcapsLock@3x.png"; sourceTree = "<group>"; };
-		F7A26501218EFEB500674D36 /* XMKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMKeyBoardView.h; sourceTree = "<group>"; };
+		F7A26524218F0AFF00674D36 /* XMBasekeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMBasekeyBoardView.h; sourceTree = "<group>"; };
+		F7A26525218F0AFF00674D36 /* XMBasekeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMBasekeyBoardView.m; sourceTree = "<group>"; };
+		F7A26527218F0AFF00674D36 /* UIView+XMFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMFrame.h"; sourceTree = "<group>"; };
+		F7A26528218F0AFF00674D36 /* UIView+XMFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMFrame.m"; sourceTree = "<group>"; };
+		F7A2652A218F0AFF00674D36 /* XMNumberkeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNumberkeyBoard.h; sourceTree = "<group>"; };
+		F7A2652B218F0AFF00674D36 /* XMNumberkeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNumberkeyBoard.m; sourceTree = "<group>"; };
+		F7A2652D218F0AFF00674D36 /* XMWordKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMWordKeyBoardView.m; sourceTree = "<group>"; };
+		F7A2652E218F0AFF00674D36 /* XMWordKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMWordKeyBoardView.h; sourceTree = "<group>"; };
+		F7A26530218F0AFF00674D36 /* XMNumStrongKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNumStrongKeyBoard.m; sourceTree = "<group>"; };
+		F7A26531218F0AFF00674D36 /* XMNumStrongKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNumStrongKeyBoard.h; sourceTree = "<group>"; };
+		F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMKeyBoardView.m; sourceTree = "<group>"; };
+		F7A26533218F0AFF00674D36 /* XMKeyBoardHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMKeyBoardHeader.h; sourceTree = "<group>"; };
+		F7A26535218F0AFF00674D36 /* emoji_touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji_touch.png; sourceTree = "<group>"; };
+		F7A26536218F0AFF00674D36 /* c_chaKeyboardButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardButtonSel.png; sourceTree = "<group>"; };
+		F7A26537218F0AFF00674D36 /* c_character_keyboardSwitchButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardSwitchButton@2x.png"; sourceTree = "<group>"; };
+		F7A26538218F0AFF00674D36 /* c_chaKeyboardShiftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardShiftButton.png; sourceTree = "<group>"; };
+		F7A26539218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardShiftButtonSel.png; sourceTree = "<group>"; };
+		F7A2653A218F0AFF00674D36 /* CXXshift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CXXshift@2x.png"; sourceTree = "<group>"; };
+		F7A2653B218F0AFF00674D36 /* c_character_keyboardDeleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardDeleteButton.png; sourceTree = "<group>"; };
+		F7A2653C218F0AFF00674D36 /* c_character_keyboardSwitchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardSwitchButton.png; sourceTree = "<group>"; };
+		F7A2653D218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardDeleteButtonSel.png; sourceTree = "<group>"; };
+		F7A2653E218F0AFF00674D36 /* newdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newdelete.png; sourceTree = "<group>"; };
+		F7A2653F218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardSwitchButtonSel@2x.png"; sourceTree = "<group>"; };
+		F7A26540218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardDeleteButtonSel@2x.png"; sourceTree = "<group>"; };
+		F7A26541218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardShiftButtonSel@2x.png"; sourceTree = "<group>"; };
+		F7A26542218F0AFF00674D36 /* newcapsLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newcapsLock.png; sourceTree = "<group>"; };
+		F7A26543218F0AFF00674D36 /* emoji_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_touch@2x.png"; sourceTree = "<group>"; };
+		F7A26544218F0AFF00674D36 /* newdelete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newdelete@2x.png"; sourceTree = "<group>"; };
+		F7A26545218F0AFF00674D36 /* c_chaKeyboardShiftButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardShiftButton@2x.png"; sourceTree = "<group>"; };
+		F7A26546218F0AFF00674D36 /* c_chaKeyboardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardButton.png; sourceTree = "<group>"; };
+		F7A26547218F0AFF00674D36 /* newdelete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newdelete@3x.png"; sourceTree = "<group>"; };
+		F7A26548218F0AFF00674D36 /* c_chaKeyboardButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardButtonSel@2x.png"; sourceTree = "<group>"; };
+		F7A26549218F0AFF00674D36 /* c_character_keyboardDeleteButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_character_keyboardDeleteButton@2x.png"; sourceTree = "<group>"; };
+		F7A2654A218F0AFF00674D36 /* newcapsLock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcapsLock@2x.png"; sourceTree = "<group>"; };
+		F7A2654B218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_character_keyboardSwitchButtonSel.png; sourceTree = "<group>"; };
+		F7A2654C218F0AFF00674D36 /* c_chaKeyboardButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_chaKeyboardButton@2x.png"; sourceTree = "<group>"; };
+		F7A2654D218F0AFF00674D36 /* newcapsLock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newcapsLock@3x.png"; sourceTree = "<group>"; };
+		F7A2654E218F0AFF00674D36 /* XMKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMKeyBoardView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +150,7 @@
 		F7A26496218EFE9E00674D36 = {
 			isa = PBXGroup;
 			children = (
+				F7A26521218F0AFF00674D36 /* Classes */,
 				F7A264A1218EFE9E00674D36 /* XMTXCustomKeyBoard */,
 				F7A264BA218EFE9E00674D36 /* XMTXCustomKeyBoardTests */,
 				F7A264C5218EFE9E00674D36 /* XMTXCustomKeyBoardUITests */,
@@ -170,7 +171,6 @@
 		F7A264A1218EFE9E00674D36 /* XMTXCustomKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264D4218EFEB500674D36 /* Classes */,
 				F7A264A2218EFE9E00674D36 /* AppDelegate.h */,
 				F7A264A3218EFE9E00674D36 /* AppDelegate.m */,
 				F7A264A5218EFE9E00674D36 /* ViewController.h */,
@@ -202,103 +202,104 @@
 			path = XMTXCustomKeyBoardUITests;
 			sourceTree = "<group>";
 		};
-		F7A264D4218EFEB500674D36 /* Classes */ = {
+		F7A26521218F0AFF00674D36 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264D5218EFEB500674D36 /* CXXkeyBoard */,
+				F7A26522218F0AFF00674D36 /* CXXkeyBoard */,
 			);
-			path = Classes;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
-		F7A264D5218EFEB500674D36 /* CXXkeyBoard */ = {
+		F7A26522218F0AFF00674D36 /* CXXkeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264D6218EFEB500674D36 /* CXXBaseKeyBoard */,
-				F7A264D9218EFEB500674D36 /* Tools */,
-				F7A264DC218EFEB500674D36 /* NumKeyboard */,
-				F7A264DF218EFEB500674D36 /* WordKeyBoard */,
-				F7A264E2218EFEB500674D36 /* NumStrongKeyBoard */,
-				F7A264E5218EFEB500674D36 /* XMKeyBoardView.m */,
-				F7A264E6218EFEB500674D36 /* XMKeyBoardHeader.h */,
-				F7A264E7218EFEB500674D36 /* KeyBoardSource */,
-				F7A26501218EFEB500674D36 /* XMKeyBoardView.h */,
+				F7A26523218F0AFF00674D36 /* CXXBaseKeyBoard */,
+				F7A26526218F0AFF00674D36 /* Tools */,
+				F7A26529218F0AFF00674D36 /* NumKeyboard */,
+				F7A2652C218F0AFF00674D36 /* WordKeyBoard */,
+				F7A2652F218F0AFF00674D36 /* NumStrongKeyBoard */,
+				F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */,
+				F7A26533218F0AFF00674D36 /* XMKeyBoardHeader.h */,
+				F7A26534218F0AFF00674D36 /* KeyBoardSource */,
+				F7A2654E218F0AFF00674D36 /* XMKeyBoardView.h */,
 			);
 			path = CXXkeyBoard;
 			sourceTree = "<group>";
 		};
-		F7A264D6218EFEB500674D36 /* CXXBaseKeyBoard */ = {
+		F7A26523218F0AFF00674D36 /* CXXBaseKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264D7218EFEB500674D36 /* XMBasekeyBoardView.h */,
-				F7A264D8218EFEB500674D36 /* XMBasekeyBoardView.m */,
+				F7A26524218F0AFF00674D36 /* XMBasekeyBoardView.h */,
+				F7A26525218F0AFF00674D36 /* XMBasekeyBoardView.m */,
 			);
 			path = CXXBaseKeyBoard;
 			sourceTree = "<group>";
 		};
-		F7A264D9218EFEB500674D36 /* Tools */ = {
+		F7A26526218F0AFF00674D36 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264DA218EFEB500674D36 /* UIView+XMFrame.h */,
-				F7A264DB218EFEB500674D36 /* UIView+XMFrame.m */,
+				F7A26527218F0AFF00674D36 /* UIView+XMFrame.h */,
+				F7A26528218F0AFF00674D36 /* UIView+XMFrame.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		F7A264DC218EFEB500674D36 /* NumKeyboard */ = {
+		F7A26529218F0AFF00674D36 /* NumKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264DD218EFEB500674D36 /* XMNumberkeyBoard.h */,
-				F7A264DE218EFEB500674D36 /* XMNumberkeyBoard.m */,
+				F7A2652A218F0AFF00674D36 /* XMNumberkeyBoard.h */,
+				F7A2652B218F0AFF00674D36 /* XMNumberkeyBoard.m */,
 			);
 			path = NumKeyboard;
 			sourceTree = "<group>";
 		};
-		F7A264DF218EFEB500674D36 /* WordKeyBoard */ = {
+		F7A2652C218F0AFF00674D36 /* WordKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264E0218EFEB500674D36 /* XMWordKeyBoardView.m */,
-				F7A264E1218EFEB500674D36 /* XMWordKeyBoardView.h */,
+				F7A2652D218F0AFF00674D36 /* XMWordKeyBoardView.m */,
+				F7A2652E218F0AFF00674D36 /* XMWordKeyBoardView.h */,
 			);
 			path = WordKeyBoard;
 			sourceTree = "<group>";
 		};
-		F7A264E2218EFEB500674D36 /* NumStrongKeyBoard */ = {
+		F7A2652F218F0AFF00674D36 /* NumStrongKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264E3218EFEB500674D36 /* XMNumStrongKeyBoard.m */,
-				F7A264E4218EFEB500674D36 /* XMNumStrongKeyBoard.h */,
+				F7A26530218F0AFF00674D36 /* XMNumStrongKeyBoard.m */,
+				F7A26531218F0AFF00674D36 /* XMNumStrongKeyBoard.h */,
 			);
 			path = NumStrongKeyBoard;
 			sourceTree = "<group>";
 		};
-		F7A264E7218EFEB500674D36 /* KeyBoardSource */ = {
+		F7A26534218F0AFF00674D36 /* KeyBoardSource */ = {
 			isa = PBXGroup;
 			children = (
-				F7A264E8218EFEB500674D36 /* emoji_touch.png */,
-				F7A264E9218EFEB500674D36 /* c_chaKeyboardButtonSel.png */,
-				F7A264EA218EFEB500674D36 /* c_character_keyboardSwitchButton@2x.png */,
-				F7A264EB218EFEB500674D36 /* c_chaKeyboardShiftButton.png */,
-				F7A264EC218EFEB500674D36 /* c_chaKeyboardShiftButtonSel.png */,
-				F7A264ED218EFEB500674D36 /* CXXshift@2x.png */,
-				F7A264EE218EFEB500674D36 /* c_character_keyboardDeleteButton.png */,
-				F7A264EF218EFEB500674D36 /* c_character_keyboardSwitchButton.png */,
-				F7A264F0218EFEB500674D36 /* c_character_keyboardDeleteButtonSel.png */,
-				F7A264F1218EFEB500674D36 /* newdelete.png */,
-				F7A264F2218EFEB500674D36 /* c_character_keyboardSwitchButtonSel@2x.png */,
-				F7A264F3218EFEB500674D36 /* c_character_keyboardDeleteButtonSel@2x.png */,
-				F7A264F4218EFEB500674D36 /* c_chaKeyboardShiftButtonSel@2x.png */,
-				F7A264F5218EFEB500674D36 /* newcapsLock.png */,
-				F7A264F6218EFEB500674D36 /* emoji_touch@2x.png */,
-				F7A264F7218EFEB500674D36 /* newdelete@2x.png */,
-				F7A264F8218EFEB500674D36 /* c_chaKeyboardShiftButton@2x.png */,
-				F7A264F9218EFEB500674D36 /* c_chaKeyboardButton.png */,
-				F7A264FA218EFEB500674D36 /* newdelete@3x.png */,
-				F7A264FB218EFEB500674D36 /* c_chaKeyboardButtonSel@2x.png */,
-				F7A264FC218EFEB500674D36 /* c_character_keyboardDeleteButton@2x.png */,
-				F7A264FD218EFEB500674D36 /* newcapsLock@2x.png */,
-				F7A264FE218EFEB500674D36 /* c_character_keyboardSwitchButtonSel.png */,
-				F7A264FF218EFEB500674D36 /* c_chaKeyboardButton@2x.png */,
-				F7A26500218EFEB500674D36 /* newcapsLock@3x.png */,
+				F7A26535218F0AFF00674D36 /* emoji_touch.png */,
+				F7A26536218F0AFF00674D36 /* c_chaKeyboardButtonSel.png */,
+				F7A26537218F0AFF00674D36 /* c_character_keyboardSwitchButton@2x.png */,
+				F7A26538218F0AFF00674D36 /* c_chaKeyboardShiftButton.png */,
+				F7A26539218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel.png */,
+				F7A2653A218F0AFF00674D36 /* CXXshift@2x.png */,
+				F7A2653B218F0AFF00674D36 /* c_character_keyboardDeleteButton.png */,
+				F7A2653C218F0AFF00674D36 /* c_character_keyboardSwitchButton.png */,
+				F7A2653D218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel.png */,
+				F7A2653E218F0AFF00674D36 /* newdelete.png */,
+				F7A2653F218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel@2x.png */,
+				F7A26540218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel@2x.png */,
+				F7A26541218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel@2x.png */,
+				F7A26542218F0AFF00674D36 /* newcapsLock.png */,
+				F7A26543218F0AFF00674D36 /* emoji_touch@2x.png */,
+				F7A26544218F0AFF00674D36 /* newdelete@2x.png */,
+				F7A26545218F0AFF00674D36 /* c_chaKeyboardShiftButton@2x.png */,
+				F7A26546218F0AFF00674D36 /* c_chaKeyboardButton.png */,
+				F7A26547218F0AFF00674D36 /* newdelete@3x.png */,
+				F7A26548218F0AFF00674D36 /* c_chaKeyboardButtonSel@2x.png */,
+				F7A26549218F0AFF00674D36 /* c_character_keyboardDeleteButton@2x.png */,
+				F7A2654A218F0AFF00674D36 /* newcapsLock@2x.png */,
+				F7A2654B218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel.png */,
+				F7A2654C218F0AFF00674D36 /* c_chaKeyboardButton@2x.png */,
+				F7A2654D218F0AFF00674D36 /* newcapsLock@3x.png */,
 			);
 			path = KeyBoardSource;
 			sourceTree = "<group>";
@@ -409,34 +410,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A26513218EFEB500674D36 /* c_character_keyboardDeleteButtonSel@2x.png in Resources */,
-				F7A26518218EFEB500674D36 /* c_chaKeyboardShiftButton@2x.png in Resources */,
-				F7A26520218EFEB500674D36 /* newcapsLock@3x.png in Resources */,
-				F7A2651C218EFEB500674D36 /* c_character_keyboardDeleteButton@2x.png in Resources */,
-				F7A2650D218EFEB500674D36 /* CXXshift@2x.png in Resources */,
-				F7A26509218EFEB500674D36 /* c_chaKeyboardButtonSel.png in Resources */,
-				F7A26508218EFEB500674D36 /* emoji_touch.png in Resources */,
+				F7A26560218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel@2x.png in Resources */,
+				F7A26565218F0AFF00674D36 /* c_chaKeyboardShiftButton@2x.png in Resources */,
+				F7A2656D218F0AFF00674D36 /* newcapsLock@3x.png in Resources */,
+				F7A26569218F0AFF00674D36 /* c_character_keyboardDeleteButton@2x.png in Resources */,
+				F7A2655A218F0AFF00674D36 /* CXXshift@2x.png in Resources */,
+				F7A26556218F0AFF00674D36 /* c_chaKeyboardButtonSel.png in Resources */,
+				F7A26555218F0AFF00674D36 /* emoji_touch.png in Resources */,
 				F7A264AF218EFE9E00674D36 /* LaunchScreen.storyboard in Resources */,
-				F7A26515218EFEB500674D36 /* newcapsLock.png in Resources */,
-				F7A26512218EFEB500674D36 /* c_character_keyboardSwitchButtonSel@2x.png in Resources */,
-				F7A2650F218EFEB500674D36 /* c_character_keyboardSwitchButton.png in Resources */,
-				F7A2651A218EFEB500674D36 /* newdelete@3x.png in Resources */,
+				F7A26562218F0AFF00674D36 /* newcapsLock.png in Resources */,
+				F7A2655F218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel@2x.png in Resources */,
+				F7A2655C218F0AFF00674D36 /* c_character_keyboardSwitchButton.png in Resources */,
+				F7A26567218F0AFF00674D36 /* newdelete@3x.png in Resources */,
 				F7A264AC218EFE9E00674D36 /* Assets.xcassets in Resources */,
-				F7A26519218EFEB500674D36 /* c_chaKeyboardButton.png in Resources */,
-				F7A2650E218EFEB500674D36 /* c_character_keyboardDeleteButton.png in Resources */,
+				F7A26566218F0AFF00674D36 /* c_chaKeyboardButton.png in Resources */,
+				F7A2655B218F0AFF00674D36 /* c_character_keyboardDeleteButton.png in Resources */,
 				F7A264AA218EFE9E00674D36 /* Main.storyboard in Resources */,
-				F7A26516218EFEB500674D36 /* emoji_touch@2x.png in Resources */,
-				F7A2651D218EFEB500674D36 /* newcapsLock@2x.png in Resources */,
-				F7A26510218EFEB500674D36 /* c_character_keyboardDeleteButtonSel.png in Resources */,
-				F7A2650B218EFEB500674D36 /* c_chaKeyboardShiftButton.png in Resources */,
-				F7A26514218EFEB500674D36 /* c_chaKeyboardShiftButtonSel@2x.png in Resources */,
-				F7A2651F218EFEB500674D36 /* c_chaKeyboardButton@2x.png in Resources */,
-				F7A26517218EFEB500674D36 /* newdelete@2x.png in Resources */,
-				F7A2651E218EFEB500674D36 /* c_character_keyboardSwitchButtonSel.png in Resources */,
-				F7A26511218EFEB500674D36 /* newdelete.png in Resources */,
-				F7A2651B218EFEB500674D36 /* c_chaKeyboardButtonSel@2x.png in Resources */,
-				F7A2650A218EFEB500674D36 /* c_character_keyboardSwitchButton@2x.png in Resources */,
-				F7A2650C218EFEB500674D36 /* c_chaKeyboardShiftButtonSel.png in Resources */,
+				F7A26563218F0AFF00674D36 /* emoji_touch@2x.png in Resources */,
+				F7A2656A218F0AFF00674D36 /* newcapsLock@2x.png in Resources */,
+				F7A2655D218F0AFF00674D36 /* c_character_keyboardDeleteButtonSel.png in Resources */,
+				F7A26558218F0AFF00674D36 /* c_chaKeyboardShiftButton.png in Resources */,
+				F7A26561218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel@2x.png in Resources */,
+				F7A2656C218F0AFF00674D36 /* c_chaKeyboardButton@2x.png in Resources */,
+				F7A26564218F0AFF00674D36 /* newdelete@2x.png in Resources */,
+				F7A2656B218F0AFF00674D36 /* c_character_keyboardSwitchButtonSel.png in Resources */,
+				F7A2655E218F0AFF00674D36 /* newdelete.png in Resources */,
+				F7A26568218F0AFF00674D36 /* c_chaKeyboardButtonSel@2x.png in Resources */,
+				F7A26557218F0AFF00674D36 /* c_character_keyboardSwitchButton@2x.png in Resources */,
+				F7A26559218F0AFF00674D36 /* c_chaKeyboardShiftButtonSel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,15 +462,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A26503218EFEB500674D36 /* UIView+XMFrame.m in Sources */,
+				F7A26550218F0AFF00674D36 /* UIView+XMFrame.m in Sources */,
 				F7A264A7218EFE9E00674D36 /* ViewController.m in Sources */,
-				F7A26504218EFEB500674D36 /* XMNumberkeyBoard.m in Sources */,
-				F7A26506218EFEB500674D36 /* XMNumStrongKeyBoard.m in Sources */,
-				F7A26507218EFEB500674D36 /* XMKeyBoardView.m in Sources */,
+				F7A26551218F0AFF00674D36 /* XMNumberkeyBoard.m in Sources */,
+				F7A26553218F0AFF00674D36 /* XMNumStrongKeyBoard.m in Sources */,
+				F7A26554218F0AFF00674D36 /* XMKeyBoardView.m in Sources */,
 				F7A264B2218EFE9E00674D36 /* main.m in Sources */,
 				F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */,
-				F7A26505218EFEB500674D36 /* XMWordKeyBoardView.m in Sources */,
-				F7A26502218EFEB500674D36 /* XMBasekeyBoardView.m in Sources */,
+				F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */,
+				F7A2654F218F0AFF00674D36 /* XMBasekeyBoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
