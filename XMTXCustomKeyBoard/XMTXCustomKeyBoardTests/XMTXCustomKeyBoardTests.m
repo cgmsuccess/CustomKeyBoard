@@ -1,18 +1,18 @@
 //
-//  CustomKeyBoardTests.m
-//  CustomKeyBoardTests
+//  XMTXCustomKeyBoardTests.m
+//  XMTXCustomKeyBoardTests
 //
-//  Created by 风吹裤衩 on 2018/11/2.
-//  Copyright © 2018年 风吹裤衩. All rights reserved.
+//  Created by 陈桂民 on 2018/11/4.
+//  Copyright © 2018年 陈桂民. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface CustomKeyBoardTests : XCTestCase
+@interface XMTXCustomKeyBoardTests : XCTestCase
 
 @end
 
-@implementation CustomKeyBoardTests
+@implementation XMTXCustomKeyBoardTests
 
 - (void)setUp {
     [super setUp];
