@@ -197,15 +197,19 @@ CGFloat topBtnH ; //按钮的高度
 /** 图片的拉伸   */
 - (UIImage *)nomImage:(BOOL)isNom {
     
+    /////获取bundle 里面的图片
+    NSBundle *currenBundle = [NSBundle bundleForClass:[self class]];
     if (isNom) {
+        NSString *imagePath = [currenBundle pathForResource:@"c_chaKeyboardButton@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
         // 普通图片
-        UIImage *image     = [UIImage imageNamed:@"c_chaKeyboardButton"];
+        UIImage *image     = [UIImage imageWithContentsOfFile:imagePath];
         //部分拉升图片
         image              = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
         return image;
     }else{
         // 高亮图片
-        UIImage *highImage = [UIImage imageNamed:@"c_chaKeyboardButtonSel"];
+        NSString *imagePath = [currenBundle pathForResource:@"c_chaKeyboardButtonSel@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
+        UIImage *highImage     = [UIImage imageWithContentsOfFile:imagePath];
         //部分拉升图片
         highImage          = [highImage stretchableImageWithLeftCapWidth:highImage.size.width * 0.5 topCapHeight:highImage.size.height * 0.5];
         return highImage;
@@ -302,9 +306,17 @@ CGFloat topBtnH ; //按钮的高度
     if (!_capsLockBtn) {
         _capsLockBtn = [CapsLockBtn buttonWithType:UIButtonTypeCustom];
         [_capsLockBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
-        [_capsLockBtn setBackgroundImage:[UIImage imageNamed:@"c_chaKeyboardShiftButton.png"] forState:UIControlStateHighlighted];
-        [_capsLockBtn setImage:[UIImage imageNamed:@"c_chaKeyboardShiftButton.png"] forState:UIControlStateNormal];
-        [_capsLockBtn setImage:[UIImage imageNamed:@"XMshift.png"] forState:UIControlStateSelected];
+        NSBundle *currenBundle = [NSBundle bundleForClass:[self class]];
+        NSString *shiftImagePath = [currenBundle pathForResource:@"c_chaKeyboardShiftButton@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
+        NSString *xMshiftImagePath = [currenBundle pathForResource:@"CXXshift@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
+
+        // 普通图片
+        UIImage *image     = [UIImage imageWithContentsOfFile:shiftImagePath];
+        UIImage *xmImage     = [UIImage imageWithContentsOfFile:xMshiftImagePath];
+
+        [_capsLockBtn setBackgroundImage:image forState:UIControlStateHighlighted];
+        [_capsLockBtn setImage:image forState:UIControlStateNormal];
+        [_capsLockBtn setImage:xmImage forState:UIControlStateSelected];
         _capsLockBtn.contentMode = UIViewContentModeCenter;
         [_capsLockBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -316,8 +328,16 @@ CGFloat topBtnH ; //按钮的高度
         _deleteBtn = [DeleteBtn buttonWithType:UIButtonTypeCustom];
         [_deleteBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         [_deleteBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
-        [_deleteBtn setImage:[UIImage imageNamed:@"c_character_keyboardDeleteButton.png"] forState:UIControlStateNormal];
-        [_deleteBtn setImage:[UIImage imageNamed:@"c_character_keyboardDeleteButtonSel.png"] forState:UIControlStateHighlighted];
+        
+        NSBundle *currenBundle = [NSBundle bundleForClass:[self class]];
+        NSString *deleteImagePath = [currenBundle pathForResource:@"c_character_keyboardDeleteButton@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
+        NSString *deleteSelectmagePath = [currenBundle pathForResource:@"c_character_keyboardDeleteButtonSel@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
+        
+        UIImage *deleteImage     = [UIImage imageWithContentsOfFile:deleteImagePath];
+        UIImage *deleteSelectxmImage     = [UIImage imageWithContentsOfFile:deleteSelectmagePath];
+        
+        [_deleteBtn setImage:deleteImage forState:UIControlStateNormal];
+        [_deleteBtn setImage:deleteSelectxmImage forState:UIControlStateHighlighted];
 
         _deleteBtn.contentMode = UIViewContentModeCenter;
         [_deleteBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
