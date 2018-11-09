@@ -16,7 +16,19 @@ typedef void(^XMCallBackBlock)(id userInfo);
 
 #import "UIView+XMFrame.h"
 
+typedef NS_ENUM(NSInteger,XMkeyBoardType) {
+    XMkeyBoardType_Default = 0 , //系统自带键盘
+    XMkeyBoardType_Word , //字母键盘
+    XMkeyBoardType_Number, //数字键盘
+    XMkeyBoardType_OnlyNumber, //数字键盘
+    XMkeyBoardType_RandomNumber, // 随机数字键盘
+    XMkeyBoardType_StrongNumber,// 数字加强键盘
+    XMkeyBoardType_IDCardNumber,// 身份证键盘
+    XMkeyBoardType_Emotion,// emoji 键盘
+};
 
+#define Kwidth [UIScreen mainScreen].bounds.size.width
+#define Kheight [UIScreen mainScreen].bounds.size.height
 
 //数组键盘 一页中最多4行
 #define XM_EmotionMaxRows 4
@@ -26,14 +38,16 @@ typedef void(^XMCallBackBlock)(id userInfo);
 #define keyBoardHeight 219 
 // 键盘的默认颜色
 #define keyBoardBackviewcolor [UIColor colorWithRed:211/255.0f green:213/255.0f blue:210/255.0f alpha:1]
+#define iPhoneX (Kwidth == 375.0f) && (Kheight == 812.0f)
+#define kBottomSafeHeight ((iPhoneX)?(34):(0))  //距离底部的安全距离
+
 
 // 默认键盘按钮颜色
 #define keyBoardBtnColor Color(224, 224, 244, 1)
 
 #define Color(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
-#define Kwidth [UIScreen mainScreen].bounds.size.width
-#define Kheight [UIScreen mainScreen].bounds.size.height
+
 
 /**  自定义打印打印   */
 #ifdef DEBUG

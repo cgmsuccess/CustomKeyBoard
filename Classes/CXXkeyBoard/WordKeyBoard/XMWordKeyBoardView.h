@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "XMBasekeyBoardView.h"
+
+/**
+ word 键盘
+ */
 @interface XMWordKeyBoardView : XMBasekeyBoardView
 
 @end

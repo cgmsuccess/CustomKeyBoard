@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23581669219435B300CF8A77 /* XMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23581668219435B300CF8A77 /* XMTextField.m */; };
 		F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264A3218EFE9E00674D36 /* AppDelegate.m */; };
 		F7A264A7218EFE9E00674D36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264A6218EFE9E00674D36 /* ViewController.m */; };
 		F7A264AA218EFE9E00674D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A264A8218EFE9E00674D36 /* Main.storyboard */; };
@@ -66,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23581667219435B300CF8A77 /* XMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMTextField.h; sourceTree = "<group>"; };
+		23581668219435B300CF8A77 /* XMTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMTextField.m; sourceTree = "<group>"; };
 		F7A2649F218EFE9E00674D36 /* XMTXCustomKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMTXCustomKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A264A2218EFE9E00674D36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7A264A3218EFE9E00674D36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -219,10 +222,12 @@
 				F7A26529218F0AFF00674D36 /* NumKeyboard */,
 				F7A2652C218F0AFF00674D36 /* WordKeyBoard */,
 				F7A2652F218F0AFF00674D36 /* NumStrongKeyBoard */,
-				F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */,
-				F7A26533218F0AFF00674D36 /* XMKeyBoardHeader.h */,
 				F7A26534218F0AFF00674D36 /* KeyBoardSource */,
+				F7A26533218F0AFF00674D36 /* XMKeyBoardHeader.h */,
 				F7A2654E218F0AFF00674D36 /* XMKeyBoardView.h */,
+				F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */,
+				23581667219435B300CF8A77 /* XMTextField.h */,
+				23581668219435B300CF8A77 /* XMTextField.m */,
 			);
 			path = CXXkeyBoard;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23581669219435B300CF8A77 /* XMTextField.m in Sources */,
 				F7A26550218F0AFF00674D36 /* UIView+XMFrame.m in Sources */,
 				F7A264A7218EFE9E00674D36 /* ViewController.m in Sources */,
 				F7A26551218F0AFF00674D36 /* XMNumberkeyBoard.m in Sources */,
@@ -634,7 +640,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85X7688G9T;
+				DEVELOPMENT_TEAM = XZ557WUPWQ;
 				INFOPLIST_FILE = XMTXCustomKeyBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -649,7 +655,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85X7688G9T;
+				DEVELOPMENT_TEAM = XZ557WUPWQ;
 				INFOPLIST_FILE = XMTXCustomKeyBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

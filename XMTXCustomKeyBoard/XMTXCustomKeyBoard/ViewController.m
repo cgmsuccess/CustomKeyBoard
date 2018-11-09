@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "XMTextField.h"
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied;
 @end
 
 @implementation ViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.xmTextfied.xmKeyBoardType = XMkeyBoardType_Word;
 }
 
 
