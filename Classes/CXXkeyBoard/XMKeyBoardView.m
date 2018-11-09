@@ -83,71 +83,71 @@
 
 #pragma mark XMkeyBoardViewDelegate
 /**  点击了内容  */
--(UIButton *)XMcilckConten:(UIButton *)contenBtn
+-(UIButton *)xmClickConten:(UIButton *)contenBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckConten:)]) {
-        [self.delegate XMcilckConten:contenBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickConten:)]) {
+        [self.delegate xmClickConten:contenBtn];
     }
     return contenBtn;
 }
 
 /**  点击了确定  */
--(UIButton *)XMcilckdetermine:(DetermineBtn *)determineBtn
+-(UIButton *)xmClickdetermine:(DetermineBtn *)determineBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckdetermine:)]) {
-        [self.delegate XMcilckdetermine:determineBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickdetermine:)]) {
+        [self.delegate xmClickdetermine:determineBtn];
     }
     return determineBtn;
 }
 
 
 /**  点击了清空  */
--(UIButton *)XMcilckClear:(ClearBtn *)clearBtn
+-(UIButton *)xmClickClear:(ClearBtn *)clearBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckClear:)]) {
-        [self.delegate XMcilckClear:(ClearBtn *)clearBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickClear:)]) {
+        [self.delegate xmClickClear:(ClearBtn *)clearBtn];
     }
     return  clearBtn;
 }
 
 /**  点击了退格  */
--(UIButton *)XMcilckDelete:(DeleteBtn *)deleteBtn
+-(UIButton *)xmClickDelete:(DeleteBtn *)deleteBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckDelete:)]) {
-        [self.delegate XMcilckDelete:deleteBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickDelete:)]) {
+        [self.delegate xmClickDelete:deleteBtn];
     }
     return deleteBtn;
 }
 
 /**  隐藏键盘  */
--(UIButton *)XMcilckHidden:(HiddenBtn *)hiddenBtn
+-(UIButton *)xmClickHidden:(HiddenBtn *)hiddenBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckHidden:)]) {
-        [self.delegate XMcilckHidden:hiddenBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickHidden:)]) {
+        [self.delegate xmClickHidden:hiddenBtn];
     }
     return hiddenBtn;
 }
 
 /**  点击了空格  */
--(UIButton *)XMcilckspace:(SpaceBtn *)spaceBtn
+-(UIButton *)xmClickspace:(SpaceBtn *)spaceBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckspace:)]) {
-        [self.delegate XMcilckspace:spaceBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickspace:)]) {
+        [self.delegate xmClickspace:spaceBtn];
     }
     return spaceBtn;
 }
 
 /**  点击了固定输入内容的按钮，点击此按钮会清空以前的输入数据，显示此按钮输入的数据    */
--(UIButton *)XMcilckfixedBtn:(fixedBtn *)fixedBtn
+-(UIButton *)xmClickfixedBtn:(fixedBtn *)fixedBtn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckfixedBtn:)]) {
-        [self.delegate XMcilckfixedBtn:fixedBtn];
+    if ([self.delegate respondsToSelector:@selector(xmClickfixedBtn:)]) {
+        [self.delegate xmClickfixedBtn:fixedBtn];
     }
     return fixedBtn;
 }
 
 /**  切换键盘  */
--(UIButton *)XMcilckswitch:(SwitchBtn *)switchBtn
+-(UIButton *)xmClickswitch:(SwitchBtn *)switchBtn
 {
     if ([switchBtn.titleLabel.text isEqualToString:@"ABC"]) {
         self.XMKeyBoardType = XMkeyBoardType_Word ;

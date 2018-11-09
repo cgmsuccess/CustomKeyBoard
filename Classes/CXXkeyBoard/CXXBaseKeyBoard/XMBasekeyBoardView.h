@@ -31,31 +31,31 @@ typedef NS_ENUM(NSInteger,XMKeyBoardBtnType)
 @optional
 
 /**  点击了键盘上的内容按钮  */
--(UIButton *)XMcilckConten:(UIButton *)contenBtn;
+-(UIButton *)xmClickConten:(UIButton *)contenBtn;
 
 /**  点击了键盘上的删除按钮  */
--(UIButton *)XMcilckDelete:(DeleteBtn *)deleteBtn;
+-(UIButton *)xmClickDelete:(DeleteBtn *)deleteBtn;
 
 /**  点击了键盘上的清空按钮  */
--(UIButton *)XMcilckClear:(ClearBtn *)clearBtn;
+-(UIButton *)xmClickClear:(ClearBtn *)clearBtn;
 
 /**  点击了键盘上的隐藏按钮  */
--(UIButton *)XMcilckHidden:(HiddenBtn *)hiddenBtn;
+-(UIButton *)xmClickHidden:(HiddenBtn *)hiddenBtn;
 
 /**  点击了键盘上的确定按钮  */
--(UIButton *)XMcilckdetermine:(DetermineBtn *)determineBtn;
+-(UIButton *)xmClickdetermine:(DetermineBtn *)determineBtn;
 
 /**  点击了键盘上的切换按钮  */
--(UIButton *)XMcilckswitch:(SwitchBtn *)switchBtn;
+-(UIButton *)xmClickswitch:(SwitchBtn *)switchBtn;
 
 /**  点击了键盘上的字母大小写的切换按钮  */
--(UIButton *)XMcilckcapsLock:(CapsLockBtn *)switchBtn;
+-(UIButton *)xmClickcapsLock:(CapsLockBtn *)switchBtn;
 
 /**  点击了键盘上的空格  */
--(UIButton *)XMcilckspace:(SpaceBtn *)spaceBtn;
+-(UIButton *)xmClickspace:(SpaceBtn *)spaceBtn;
 
 /**  点击了键盘上的固定按钮  */
--(UIButton *)XMcilckfixedBtn:(fixedBtn *)fixedBtn;
+-(UIButton *)xmClickfixedBtn:(fixedBtn *)fixedBtn;
 
 @end
 

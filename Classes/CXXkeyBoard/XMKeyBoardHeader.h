@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger,XMkeyBoardType) {
     XMkeyBoardType_Default = 0 , //系统自带键盘
     XMkeyBoardType_Word , //字母键盘
     XMkeyBoardType_Number, //数字键盘
-    XMkeyBoardType_OnlyNumber, //数字键盘
+    XMkeyBoardType_OnlyNumber, //纯数字键盘
     XMkeyBoardType_RandomNumber, // 随机数字键盘
     XMkeyBoardType_StrongNumber,// 数字加强键盘
     XMkeyBoardType_IDCardNumber,// 身份证键盘
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger,XMkeyBoardType) {
 // 键盘的默认高度
 #define keyBoardHeight 219 
 // 键盘的默认颜色
-#define keyBoardBackviewcolor [UIColor colorWithRed:211/255.0f green:213/255.0f blue:210/255.0f alpha:1]
+#define keyBoardBackviewcolor [UIColor colorWithRed:209/255.0f green:213/255.0f blue:219/255.0f alpha:1]
 #define iPhoneX (Kwidth == 375.0f) && (Kheight == 812.0f)
 #define kBottomSafeHeight ((iPhoneX)?(34):(0))  //距离底部的安全距离
 

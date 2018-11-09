@@ -101,6 +101,7 @@ CGFloat topBtnH ; //按钮的高度
     [super layoutSubviews];
     [self wordlayout];//字母的布局
     [self specialBtnLayout];//特殊按钮的布局 删除，空格，退格，大小写切换等
+
 }
 
 /**  特殊按钮的布局  */
@@ -238,8 +239,8 @@ CGFloat topBtnH ; //按钮的高度
 /**  点击了字母  */
 -(void)cilckWordbtn:(UIButton *)btn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckConten:)]) {
-        [self.delegate XMcilckConten:btn];
+    if ([self.delegate respondsToSelector:@selector(xmClickConten:)]) {
+        [self.delegate xmClickConten:btn];
     }
 }
 
@@ -257,40 +258,40 @@ CGFloat topBtnH ; //按钮的高度
 /** 退格   */
 -(void)cilckdeleteword:(DeleteBtn *)btn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckDelete:)]) {
-        [self.delegate XMcilckDelete:btn];
+    if ([self.delegate respondsToSelector:@selector(xmClickDelete:)]) {
+        [self.delegate xmClickDelete:btn];
     }
 }
 
 /**  数字字母切换  */
 -(void)cilcknumSwitchword:(SwitchBtn *)btn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckswitch:)]) {
-        [self.delegate XMcilckswitch:btn];
+    if ([self.delegate respondsToSelector:@selector(xmClickswitch:)]) {
+        [self.delegate xmClickswitch:btn];
     }
 }
 
 /**  隐藏键盘  */
 -(void)cilckHidden:(HiddenBtn *)btn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckHidden:)]) {
-        [self.delegate XMcilckHidden:btn];
+    if ([self.delegate respondsToSelector:@selector(xmClickHidden:)]) {
+        [self.delegate xmClickHidden:btn];
     }
 }
 
 /**  点击了空格  */
 -(void)cilckSpace:(SpaceBtn *)btn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckspace:)]) {
-        [self.delegate XMcilckspace:btn];
+    if ([self.delegate respondsToSelector:@selector(xmClickspace:)]) {
+        [self.delegate xmClickspace:btn];
     }
 }
 
 /**  点击了确定  */
 -(void)cilckdetermin:(DetermineBtn *)btn
 {
-    if ([self.delegate respondsToSelector:@selector(XMcilckdetermine:)]) {
-        [self.delegate XMcilckdetermine:btn];
+    if ([self.delegate respondsToSelector:@selector(xmClickdetermine:)]) {
+        [self.delegate xmClickdetermine:btn];
     }
 }
 

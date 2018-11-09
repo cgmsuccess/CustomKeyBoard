@@ -8,9 +8,20 @@
 
 #import "ViewController.h"
 #import "XMTextField.h"
+#import "XMWordKeyBoardView.h"
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet XMTextField *xmTextfied;
+
+@property (weak, nonatomic) IBOutlet XMTextField *xmtextfield1;
+
+@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied2;
+
+@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied3;
+
+@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied4;
+
+@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied5;
 @end
 
 @implementation ViewController
@@ -20,6 +31,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.xmTextfied.xmKeyBoardType = XMkeyBoardType_Word;
+    self.xmtextfield1.xmKeyBoardType = XMkeyBoardType_StrongNumber;
+    self.xmTextfied2.xmKeyBoardType = XMkeyBoardType_Number;
+    self.xmTextfied3.xmKeyBoardType = XMkeyBoardType_RandomNumber;
+    self.xmTextfied4.xmKeyBoardType = XMkeyBoardType_IDCardNumber;
+    self.xmTextfied5.xmKeyBoardType = XMkeyBoardType_OnlyNumber;
+
 }
 
 

@@ -81,7 +81,7 @@
 }
 #pragma mark XMkeyBoardViewDelegate
 /**  点击了内容  */
--(UIButton *)XMcilckConten:(UIButton *)contenBtn
+-(UIButton *)xmClickConten:(UIButton *)contenBtn
 {
     if (contenBtn.titleLabel.text.length == 0) {
         return nil;
@@ -91,14 +91,14 @@
 }
 
 /**  点击了确定  */
--(UIButton *)XMcilckdetermine:(DetermineBtn *)determineBtn
+-(UIButton *)xmClickdetermine:(DetermineBtn *)determineBtn
 {
     [self resignFirstResponder];
     return determineBtn;
 }
 
 /**  点击了清空  */
--(UIButton *)XMcilckClear:(ClearBtn *)clearBtn
+-(UIButton *)xmClickClear:(ClearBtn *)clearBtn
 {
     self.text = @"";
     
@@ -110,28 +110,28 @@
 }
 
 /**  点击了退格  */
--(UIButton *)XMcilckDelete:(DeleteBtn *)deleteBtn
+-(UIButton *)xmClickDelete:(DeleteBtn *)deleteBtn
 {
     [self deleteBackward];
     return deleteBtn;
 }
 
 /**  隐藏键盘  */
--(UIButton *)XMcilckHidden:(HiddenBtn *)hiddenBtn
+-(UIButton *)xmClickHidden:(HiddenBtn *)hiddenBtn
 {
     [self endEditing:YES];
     return hiddenBtn;
 }
 
 /**  点击了空格  */
--(UIButton *)XMcilckspace:(SpaceBtn *)spaceBtn
+-(UIButton *)xmClickspace:(SpaceBtn *)spaceBtn
 {
     [self insertText:@" "];
     return spaceBtn;
 }
 
 /**  点击了固定内容的按钮。点击此按钮，输入此按钮显示内容，清空输入框    */
--(UIButton *)XMcilckfixedBtn:(fixedBtn *)fixedBtn
+-(UIButton *)xmClickfixedBtn:(fixedBtn *)fixedBtn
 {
     self.text = @"";
     [self insertText:fixedBtn.titleLabel.text];

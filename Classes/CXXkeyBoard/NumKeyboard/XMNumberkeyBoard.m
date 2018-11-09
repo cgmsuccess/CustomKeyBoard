@@ -194,7 +194,7 @@
         numBtn.tag = 1000 + i;
         i++;
         
-        numBtn.layer.borderWidth = 0.5;
+        numBtn.layer.borderWidth = 0.25;
         numBtn.layer.borderColor = keyBoardBackviewcolor.CGColor;
         [numBtn addTarget:self action:@selector(cilck:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:numBtn];
@@ -209,46 +209,46 @@
     
     if ([cilckBtn.class isEqual:[UIButton class]]) {
         XMLog(@"内容按钮");
-        if ([self.delegate respondsToSelector:@selector(XMcilckConten:)]) {
-            [self.delegate XMcilckConten:cilckBtn];
+        if ([self.delegate respondsToSelector:@selector(xmClickConten:)]) {
+            [self.delegate xmClickConten:cilckBtn];
         }
         return;
     }
     
     if ([cilckBtn.class isEqual:[SwitchBtn class]]) {
         XMLog(@"点击了切换拼音");
-        if ([self.delegate respondsToSelector:@selector(XMcilckswitch:)]) {
-            [self.delegate XMcilckswitch:(SwitchBtn *)cilckBtn];
+        if ([self.delegate respondsToSelector:@selector(xmClickswitch:)]) {
+            [self.delegate xmClickswitch:(SwitchBtn *)cilckBtn];
         }
         return;
     }
     
     if ([cilckBtn.class isEqual:[DeleteBtn class]]) {
         XMLog(@"点击了退格");
-        if ([self.delegate respondsToSelector:@selector(XMcilckDelete:)]) {
-            [self.delegate XMcilckDelete:(DeleteBtn *)cilckBtn];
+        if ([self.delegate respondsToSelector:@selector(xmClickDelete:)]) {
+            [self.delegate xmClickDelete:(DeleteBtn *)cilckBtn];
         }
         return;
     }
     if ([cilckBtn.class isEqual:[ClearBtn class]]) {
         XMLog(@"点击了清空");
-        if ([self.delegate respondsToSelector:@selector(XMcilckClear:)]) {
-            [self.delegate XMcilckClear:(ClearBtn *)cilckBtn];
+        if ([self.delegate respondsToSelector:@selector(xmClickClear:)]) {
+            [self.delegate xmClickClear:(ClearBtn *)cilckBtn];
         }
         return;
     }
     if ([cilckBtn.class isEqual:[HiddenBtn class]]) {
         XMLog(@"点击隐藏");
-        if ([self.delegate respondsToSelector:@selector(XMcilckHidden:)]) {
-            [self.delegate XMcilckHidden:(HiddenBtn *)cilckBtn];
+        if ([self.delegate respondsToSelector:@selector(xmClickHidden:)]) {
+            [self.delegate xmClickHidden:(HiddenBtn *)cilckBtn];
         }
         return;
     }
     
     if ([cilckBtn.class isEqual:[DetermineBtn class]]) {
         XMLog(@"点击了确定");
-        if ([self.delegate respondsToSelector:@selector(XMcilckdetermine:)]) {
-            [self.delegate XMcilckdetermine:(DetermineBtn *)cilckBtn];
+        if ([self.delegate respondsToSelector:@selector(xmClickdetermine:)]) {
+            [self.delegate xmClickdetermine:(DetermineBtn *)cilckBtn];
         }
         return;
     }
