@@ -9,6 +9,9 @@
 *
 * 这里 自定义键盘的公共配置和基类。  考虑以后扩展，暂时做个base 放在这里
 *
+*
+* 里面实现了创建按，删除。退格等 创建方式。子类继承此类，实现对应UI即可
+*
 *********************************************************************************
 */
 
@@ -34,28 +37,32 @@ typedef NS_ENUM(NSInteger,XMKeyBoardBtnType)
 -(UIButton *)xmClickConten:(UIButton *)contenBtn;
 
 /**  点击了键盘上的删除按钮  */
--(UIButton *)xmClickDelete:(DeleteBtn *)deleteBtn;
+-(DeleteBtn *)xmClickDelete:(DeleteBtn *)deleteBtn;
 
 /**  点击了键盘上的清空按钮  */
--(UIButton *)xmClickClear:(ClearBtn *)clearBtn;
+-(ClearBtn *)xmClickClear:(ClearBtn *)clearBtn;
 
 /**  点击了键盘上的隐藏按钮  */
--(UIButton *)xmClickHidden:(HiddenBtn *)hiddenBtn;
+-(HiddenBtn *)xmClickHidden:(HiddenBtn *)hiddenBtn;
 
 /**  点击了键盘上的确定按钮  */
--(UIButton *)xmClickdetermine:(DetermineBtn *)determineBtn;
+-(DetermineBtn *)xmClickdetermine:(DetermineBtn *)determineBtn;
 
 /**  点击了键盘上的切换按钮  */
--(UIButton *)xmClickswitch:(SwitchBtn *)switchBtn;
+-(SwitchBtn *)xmClickswitch:(SwitchBtn *)switchBtn;
 
 /**  点击了键盘上的字母大小写的切换按钮  */
--(UIButton *)xmClickcapsLock:(CapsLockBtn *)switchBtn;
+-(CapsLockBtn *)xmClickcapsLock:(CapsLockBtn *)switchBtn;
 
 /**  点击了键盘上的空格  */
--(UIButton *)xmClickspace:(SpaceBtn *)spaceBtn;
+-(SpaceBtn *)xmClickspace:(SpaceBtn *)spaceBtn;
 
 /**  点击了键盘上的固定按钮  */
--(UIButton *)xmClickfixedBtn:(fixedBtn *)fixedBtn;
+-(fixedBtn *)xmClickfixedBtn:(fixedBtn *)fixedBtn;
+
+/** 大小写切换事件处理   */
+-(UIButton *)xmClicklowExchangeAcapital:(UIButton *)btn;
+
 
 @end
 

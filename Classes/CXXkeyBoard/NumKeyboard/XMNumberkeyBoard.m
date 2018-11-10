@@ -101,7 +101,6 @@
         numBtn.titleLabel.font = [UIFont systemFontOfSize:18];
         numBtn.layer.borderWidth = 0.25;
         numBtn.layer.borderColor = keyBoardBtnColor.CGColor;
-        [numBtn addTarget:self action:@selector(cilck:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:numBtn];
     }
 
@@ -131,7 +130,6 @@
         numBtn.titleLabel.font = [UIFont systemFontOfSize:18];
         numBtn.layer.borderWidth = 0.25;
         numBtn.layer.borderColor = keyBoardBtnColor.CGColor;
-        [numBtn addTarget:self action:@selector(cilck:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:numBtn];
     }
 }
@@ -162,7 +160,6 @@
         numBtn.titleLabel.font = [UIFont systemFontOfSize:18];
         numBtn.layer.borderWidth = 0.25;
         numBtn.layer.borderColor = keyBoardBtnColor.CGColor;
-        [numBtn addTarget:self action:@selector(cilck:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:numBtn];
     }
 }
@@ -196,64 +193,9 @@
         
         numBtn.layer.borderWidth = 0.25;
         numBtn.layer.borderColor = keyBoardBackviewcolor.CGColor;
-        [numBtn addTarget:self action:@selector(cilck:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:numBtn];
     }
 }
-
--(void)cilck:(UIButton *)cilckBtn
-{
-    if (self.cilckBlock) {
-        self.cilckBlock(cilckBtn);
-    }
-    
-    if ([cilckBtn.class isEqual:[UIButton class]]) {
-        XMLog(@"内容按钮");
-        if ([self.delegate respondsToSelector:@selector(xmClickConten:)]) {
-            [self.delegate xmClickConten:cilckBtn];
-        }
-        return;
-    }
-    
-    if ([cilckBtn.class isEqual:[SwitchBtn class]]) {
-        XMLog(@"点击了切换拼音");
-        if ([self.delegate respondsToSelector:@selector(xmClickswitch:)]) {
-            [self.delegate xmClickswitch:(SwitchBtn *)cilckBtn];
-        }
-        return;
-    }
-    
-    if ([cilckBtn.class isEqual:[DeleteBtn class]]) {
-        XMLog(@"点击了退格");
-        if ([self.delegate respondsToSelector:@selector(xmClickDelete:)]) {
-            [self.delegate xmClickDelete:(DeleteBtn *)cilckBtn];
-        }
-        return;
-    }
-    if ([cilckBtn.class isEqual:[ClearBtn class]]) {
-        XMLog(@"点击了清空");
-        if ([self.delegate respondsToSelector:@selector(xmClickClear:)]) {
-            [self.delegate xmClickClear:(ClearBtn *)cilckBtn];
-        }
-        return;
-    }
-    if ([cilckBtn.class isEqual:[HiddenBtn class]]) {
-        XMLog(@"点击隐藏");
-        if ([self.delegate respondsToSelector:@selector(xmClickHidden:)]) {
-            [self.delegate xmClickHidden:(HiddenBtn *)cilckBtn];
-        }
-        return;
-    }
-    
-    if ([cilckBtn.class isEqual:[DetermineBtn class]]) {
-        XMLog(@"点击了确定");
-        if ([self.delegate respondsToSelector:@selector(xmClickdetermine:)]) {
-            [self.delegate xmClickdetermine:(DetermineBtn *)cilckBtn];
-        }
-        return;
-    }
-}
-
 
 -(void)layoutSubviews
 {
@@ -272,8 +214,7 @@
 
 #pragma mark Lazy
 
-
-
+//** 数字键盘  */
 -(NSArray *)dataSource
 {
     if (!_dataSource) {
@@ -282,6 +223,7 @@
     return _dataSource;
 }
 
+//**  身份证键盘  */
 -(NSArray *)cardDataSource
 {
     if (!_cardDataSource) {
@@ -290,6 +232,7 @@
     return _cardDataSource;
 }
 
+//**  纯数字键盘   */
 -(NSArray *)onlyNumberSopurce{
     if (!_onlyNumberSopurce) {
         _onlyNumberSopurce = @[@"1",@"2",@"3",@"退格",@"4",@"5",@"6",@"清空",@"7",@"8",@"9",@"隐藏",@"",@"0",@".",@"确定"];
@@ -314,7 +257,7 @@
     [customRandomArr insertObject:@"." atIndex:14];
     [customRandomArr insertObject:@"确定" atIndex:15];
     
-    NSLog(@"customRandomArr = %@" ,customRandomArr);
+    XMLog(@"customRandomArr = %@" ,customRandomArr);
     
     for (int i = 0; i < 16; i ++) {
         [randomarr addObject:customRandomArr[i]];

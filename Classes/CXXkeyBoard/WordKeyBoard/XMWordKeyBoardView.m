@@ -16,7 +16,7 @@ CGFloat rowMargin = 10;//列间距
 CGFloat topBtnW ; //按钮的宽度
 CGFloat topBtnH ; //按钮的高度
 
-@interface XMWordKeyBoardView()
+@interface XMWordKeyBoardView()<XMkeyBoardViewDelegate>
 
 /**   装载切割好了的字符串   */
 @property (nonatomic,strong)NSMutableArray *dataSource;
@@ -77,21 +77,24 @@ CGFloat topBtnH ; //按钮的高度
     for (int i = 0; i < string.length; i++) {
         NSString *str = [string substringWithRange:NSMakeRange(i, 1)];
         [self.dataSource addObject:str];
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton *btn = [self creatNormalBtn];
         [btn setTitle:str forState:UIControlStateNormal];
         [btn setBackgroundImage :[self nomImage:YES] forState:UIControlStateNormal];
         [btn setBackgroundImage :[self nomImage:NO] forState:UIControlStateHighlighted];
         btn.tag = i + 1000 ;
-        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        btn.backgroundColor = [UIColor clearColor];
         [self addSubview:btn];
     }
+    self.delegate = self;
     [self addSubview:self.capsLockBtn];
     [self addSubview:self.deleteBtn];
     [self addSubview:self.switchBtn];
     [self addSubview:self.hiddenBtn];
     [self addSubview:self.spaceBtn];
     [self addSubview:self.determinBtn];
+    
+    [self.capsLockBtn addTarget:self action:@selector(capslockExchange:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark 布局
@@ -176,6 +179,17 @@ CGFloat topBtnH ; //按钮的高度
     }
 }
 
+///** 大小写切换事件处理   */
+-(void)capslockExchange:(CapsLockBtn *)btn
+{
+    btn.selected =! btn.selected;
+    if (self.capsLockBtn.selected) { //小写切大写
+        [self reloadword:NO];
+    }else{
+        [self reloadword:YES]; //大写切小写
+    }
+}
+
 /**  刷新大小写  */
 -(void)reloadword:(BOOL)isLowercase
 {
@@ -216,100 +230,16 @@ CGFloat topBtnH ; //按钮的高度
     }
 }
 
--(void)btnClick:(UIButton *)cilckBtn
-{
-    if ([[cilckBtn class] isEqual:[CapsLockBtn class]]) {
-        [self cilcklowExchangeAcapital:(CapsLockBtn *)cilckBtn];  //大小写切换
-    }
-    else if([[cilckBtn class] isEqual:[DeleteBtn class]]){
-        [self cilckdeleteword:(DeleteBtn *)cilckBtn]; //退格
-    }
-    else if([[cilckBtn class] isEqual:[SwitchBtn class]]){
-        [self cilcknumSwitchword:(SwitchBtn *)cilckBtn];//切换word和数字键盘
-    }
-    else if([[cilckBtn class] isEqual:[HiddenBtn class]]){ // 隐藏
-        [self cilckHidden:(HiddenBtn *)cilckBtn];
-    }
-    else if([[cilckBtn class] isEqual:[SpaceBtn class]]){// 空格
-        [self cilckSpace:(SpaceBtn *)cilckBtn];
-    }
-    else if([[cilckBtn class] isEqual:[DetermineBtn class]]){ //确定
-        [self cilckdetermin:(DetermineBtn *)cilckBtn];
-    }else{
-        [self cilckWordbtn:cilckBtn]; //字母按钮
-    }
-}
-
-/**  点击了字母  */
--(void)cilckWordbtn:(UIButton *)btn
-{
-    if ([self.delegate respondsToSelector:@selector(xmClickConten:)]) {
-        [self.delegate xmClickConten:btn];
-    }
-}
-
-/** 大小写切换事件处理   */
--(void)cilcklowExchangeAcapital:(UIButton *)btn
-{
-    btn.selected =! btn.selected;
-    if (btn.selected) { //小写切大写
-        [self reloadword:NO];
-    }else{
-        [self reloadword:YES]; //大写切小写
-    }
-}
-
-/** 退格   */
--(void)cilckdeleteword:(DeleteBtn *)btn
-{
-    if ([self.delegate respondsToSelector:@selector(xmClickDelete:)]) {
-        [self.delegate xmClickDelete:btn];
-    }
-}
-
-/**  数字字母切换  */
--(void)cilcknumSwitchword:(SwitchBtn *)btn
-{
-    if ([self.delegate respondsToSelector:@selector(xmClickswitch:)]) {
-        [self.delegate xmClickswitch:btn];
-    }
-}
-
-/**  隐藏键盘  */
--(void)cilckHidden:(HiddenBtn *)btn
-{
-    if ([self.delegate respondsToSelector:@selector(xmClickHidden:)]) {
-        [self.delegate xmClickHidden:btn];
-    }
-}
-
-/**  点击了空格  */
--(void)cilckSpace:(SpaceBtn *)btn
-{
-    if ([self.delegate respondsToSelector:@selector(xmClickspace:)]) {
-        [self.delegate xmClickspace:btn];
-    }
-}
-
-/**  点击了确定  */
--(void)cilckdetermin:(DetermineBtn *)btn
-{
-    if ([self.delegate respondsToSelector:@selector(xmClickdetermine:)]) {
-        [self.delegate xmClickdetermine:btn];
-    }
-}
-
-
 #pragma mark Lazy  -----懒加载--------
--(UIButton *)capsLockBtn
+-(CapsLockBtn *)capsLockBtn
 {
     if (!_capsLockBtn) {
-        _capsLockBtn = [CapsLockBtn buttonWithType:UIButtonTypeCustom];
+        _capsLockBtn = [self creatCapsLockBtn];
+        _capsLockBtn.backgroundColor = [UIColor clearColor];
         [_capsLockBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         NSBundle *currenBundle = [NSBundle bundleForClass:[self class]];
         NSString *shiftImagePath = [currenBundle pathForResource:@"c_chaKeyboardShiftButton@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
         NSString *xMshiftImagePath = [currenBundle pathForResource:@"CXXshift@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
-
         // 普通图片
         UIImage *image     = [UIImage imageWithContentsOfFile:shiftImagePath];
         UIImage *xmImage     = [UIImage imageWithContentsOfFile:xMshiftImagePath];
@@ -318,14 +248,15 @@ CGFloat topBtnH ; //按钮的高度
         [_capsLockBtn setImage:image forState:UIControlStateNormal];
         [_capsLockBtn setImage:xmImage forState:UIControlStateSelected];
         _capsLockBtn.contentMode = UIViewContentModeCenter;
-        [_capsLockBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _capsLockBtn;
 }
 -(DeleteBtn *)deleteBtn
 {
     if (!_deleteBtn) {
-        _deleteBtn = [DeleteBtn buttonWithType:UIButtonTypeCustom];
+        _deleteBtn = [self creatDeleteBtn];
+        _deleteBtn.backgroundColor = [UIColor clearColor];
+
         [_deleteBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         [_deleteBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
         
@@ -340,7 +271,6 @@ CGFloat topBtnH ; //按钮的高度
         [_deleteBtn setImage:deleteSelectxmImage forState:UIControlStateHighlighted];
 
         _deleteBtn.contentMode = UIViewContentModeCenter;
-        [_deleteBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteBtn;
 }
@@ -348,13 +278,13 @@ CGFloat topBtnH ; //按钮的高度
 -(HiddenBtn *)hiddenBtn
 {
     if (!_hiddenBtn) {
-        _hiddenBtn = [HiddenBtn buttonWithType:UIButtonTypeCustom];
+        _hiddenBtn = [self creatHiddenBtn];
+        _hiddenBtn.backgroundColor = [UIColor clearColor];
         [_hiddenBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         [_hiddenBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
         _hiddenBtn.contentMode = UIViewContentModeCenter;
         [_hiddenBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_hiddenBtn setTitle:@"隐藏" forState:UIControlStateNormal];
-        [_hiddenBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _hiddenBtn;
 }
@@ -362,13 +292,14 @@ CGFloat topBtnH ; //按钮的高度
 -(SpaceBtn *)spaceBtn
 {
     if (!_spaceBtn) {
-        _spaceBtn = [SpaceBtn buttonWithType:UIButtonTypeCustom];
+        _spaceBtn = [self creatSpaceBtn];
+        _spaceBtn.backgroundColor = [UIColor clearColor];
+
         [_spaceBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         [_spaceBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
         [_spaceBtn setTitle:@"空格" forState:UIControlStateNormal];
         [_spaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _spaceBtn.contentMode = UIViewContentModeCenter;
-        [_spaceBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _spaceBtn;
 }
@@ -376,13 +307,14 @@ CGFloat topBtnH ; //按钮的高度
 -(SwitchBtn *)switchBtn
 {
     if (!_switchBtn) {
-        _switchBtn = [SwitchBtn buttonWithType:UIButtonTypeCustom];
+        _switchBtn = [self creatSwitchBtn];
+        _switchBtn.backgroundColor = [UIColor clearColor];
+
         [_switchBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         [_switchBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
         [_switchBtn setTitle:@"123" forState:UIControlStateNormal];
         [_switchBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _switchBtn.contentMode = UIViewContentModeCenter;
-        [_switchBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _switchBtn;
 }
@@ -390,13 +322,14 @@ CGFloat topBtnH ; //按钮的高度
 -(DetermineBtn *)determinBtn
 {
     if (!_determinBtn) {
-        _determinBtn = [DetermineBtn buttonWithType:UIButtonTypeCustom];
+        _determinBtn = [self creatDetermineBtnBtn];
+        _determinBtn.backgroundColor = [UIColor clearColor];
+
         [_determinBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         [_determinBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
         [_determinBtn setTitle:@"确定" forState:UIControlStateNormal];
         [_determinBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _determinBtn.contentMode = UIViewContentModeCenter;
-        [_determinBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _determinBtn;
 }
