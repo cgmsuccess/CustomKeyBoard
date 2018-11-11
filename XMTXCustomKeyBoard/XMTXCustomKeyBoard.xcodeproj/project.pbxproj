@@ -23,6 +23,7 @@
 		F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A2652D218F0AFF00674D36 /* XMWordKeyBoardView.m */; };
 		F7A26553218F0AFF00674D36 /* XMNumStrongKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A26530218F0AFF00674D36 /* XMNumStrongKeyBoard.m */; };
 		F7A26554218F0AFF00674D36 /* XMKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */; };
+		F7D027E12197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D027E02197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		F7A26532218F0AFF00674D36 /* XMKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMKeyBoardView.m; sourceTree = "<group>"; };
 		F7A26533218F0AFF00674D36 /* XMKeyBoardHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMKeyBoardHeader.h; sourceTree = "<group>"; };
 		F7A2654E218F0AFF00674D36 /* XMKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMKeyBoardView.h; sourceTree = "<group>"; };
+		F7D027DF2197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMNumberKeyBoardStyleOne.h; sourceTree = "<group>"; };
+		F7D027E02197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMNumberKeyBoardStyleOne.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,7 @@
 		F7A26522218F0AFF00674D36 /* CXXkeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				F7D027DE2197DFA4002D2CDF /* NumKeyBoardStyleOne */,
 				F7A26523218F0AFF00674D36 /* CXXBaseKeyBoard */,
 				F7A26526218F0AFF00674D36 /* Tools */,
 				F7A26529218F0AFF00674D36 /* NumKeyboard */,
@@ -227,6 +231,15 @@
 				F7A26531218F0AFF00674D36 /* XMNumStrongKeyBoard.h */,
 			);
 			path = NumStrongKeyBoard;
+			sourceTree = "<group>";
+		};
+		F7D027DE2197DFA4002D2CDF /* NumKeyBoardStyleOne */ = {
+			isa = PBXGroup;
+			children = (
+				F7D027DF2197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.h */,
+				F7D027E02197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.m */,
+			);
+			path = NumKeyBoardStyleOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +386,7 @@
 				F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */,
 				F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */,
 				F7A2654F218F0AFF00674D36 /* XMBasekeyBoardView.m in Sources */,
+				F7D027E12197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger,XMkeyBoardType) {
     XMkeyBoardType_OnlyNumber, //纯数字键盘
     XMkeyBoardType_RandomNumber, // 随机数字键盘
     XMkeyBoardType_StrongNumber,// 数字加强键盘
+    XMkeyBoardType_NumberStyleOne, //数字键盘风格1
     XMkeyBoardType_IDCardNumber,// 身份证键盘
     XMkeyBoardType_Emotion,// emoji 键盘
 };

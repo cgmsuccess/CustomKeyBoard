@@ -2,8 +2,8 @@
 //  XMNumberkeyBoard.m
 //  chexiaoxi
 //
-//  Created by 链派社区 on 2018/6/29.
-//  Copyright © 2018年 链派社区. All rights reserved.
+//  Created by 风吹裤衩 on 2018/6/29.
+//  Copyright © 2018年 风吹裤衩. All rights reserved.
 //
 
 #import "XMNumberkeyBoard.h"

@@ -2,8 +2,8 @@
 //  ViewController.m
 //  XMTXCustomKeyBoard
 //
-//  Created by 陈桂民 on 2018/11/4.
-//  Copyright © 2018年 陈桂民. All rights reserved.
+//  Created by 风吹裤衩 on 2018/11/4.
+//  Copyright © 2018年 风吹裤衩. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -35,7 +35,7 @@
     self.xmTextfied2.xmKeyBoardType = XMkeyBoardType_Number;
     self.xmTextfied3.xmKeyBoardType = XMkeyBoardType_RandomNumber;
     self.xmTextfied4.xmKeyBoardType = XMkeyBoardType_IDCardNumber;
-    self.xmTextfied5.xmKeyBoardType = XMkeyBoardType_OnlyNumber;
+    self.xmTextfied5.xmKeyBoardType = XMkeyBoardType_NumberStyleOne;
 
 }
 
