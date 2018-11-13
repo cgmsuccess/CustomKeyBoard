@@ -8,6 +8,9 @@
 
 #import "XMBasekeyBoardView.h"
 
+/**
+ 字符键盘
+ */
 @interface XMCharKeyBoardView : XMBasekeyBoardView
 
 @end

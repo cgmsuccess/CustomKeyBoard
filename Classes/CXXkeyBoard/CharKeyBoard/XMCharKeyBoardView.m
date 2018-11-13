@@ -191,7 +191,7 @@
         _switchBtn = [self creatSwitchBtn];
         _switchBtn.backgroundColor = [UIColor clearColor];
         [_switchBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
-        [_switchBtn setTitle:@"#+-" forState:UIControlStateNormal];
+        [_switchBtn setTitle:@"123" forState:UIControlStateNormal];
         _switchBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _switchBtn.contentMode = UIViewContentModeCenter;
     }

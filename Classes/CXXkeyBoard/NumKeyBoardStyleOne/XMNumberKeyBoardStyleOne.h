@@ -8,6 +8,9 @@
 
 #import "XMBasekeyBoardView.h"
 
+/**
+ 数字键盘 
+ */
 @interface XMNumberKeyBoardStyleOne : XMBasekeyBoardView
 
 @end
