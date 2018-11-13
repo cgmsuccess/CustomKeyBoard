@@ -17,6 +17,7 @@
 @property (nonatomic,strong)XMWordKeyBoardView *wordKeyBoard;/// 文字键盘
 @property (nonatomic,strong)XMNumStrongKeyBoard *strongNumKeyBoard; /// 数字加强键盘
 @property (nonatomic,strong)XMNumberKeyBoardStyleOne *numberKeyboardstyleone;///数字键盘风格1
+@property (nonatomic,strong)XMCharKeyBoardView *charKeyBoard ; ///< 字符键盘
 @property (nonatomic,assign)XMkeyBoardType creatXMKeyBoardType; ///记录创建的时候是什么键盘
 
 @end
@@ -79,6 +80,9 @@
             break;
         case XMkeyBoardType_NumberStyleOne:
             [self addSubview:self.numberKeyboardstyleone];
+            break;
+        case XMkeyBoardType_charAndNumber:
+            [self addSubview:self.charKeyBoard];
             break;
         default:
             break;
@@ -154,31 +158,47 @@
 -(UIButton *)xmClickswitch:(SwitchBtn *)switchBtn
 {
     if ([switchBtn.titleLabel.text isEqualToString:@"ABC"]) {
-        self.XMKeyBoardType = XMkeyBoardType_Word ;
-        for (UIView *subview in self.subviews) {
-            if ([[subview class] isEqual:[XMNumberkeyBoard class]]) {
-                [subview removeFromSuperview]; //移除
-            }
-        }
-        [self setNeedsLayout];
-        [self layoutIfNeeded];
-
+        [self exchangePinyin:switchBtn];
     }else if([switchBtn.titleLabel.text isEqualToString: @"123"]){
-        if(_creatXMKeyBoardType == XMkeyBoardType_RandomNumber){//如果创建的时候是随机数字键盘
-            self.XMKeyBoardType = XMkeyBoardType_RandomNumber; //切换随机数组键盘
-        }else{
-            //切换为数字键盘
-            self.XMKeyBoardType = XMkeyBoardType_Number;
-        }
-        for (UIView *subview in self.subviews) {
-            if ([[subview class] isEqual:[XMWordKeyBoardView class]]) {
-                [subview removeFromSuperview]; //移除
-            }
-        }
-        [self setNeedsLayout];
-        [self layoutIfNeeded];
+        [self exchangeNumber:switchBtn];
+    }else if([switchBtn.titleLabel.text isEqualToString: @"拼音"]){
+        [self exchangePinyin:switchBtn];
+    }else if([switchBtn.titleLabel.text isEqualToString: @"字符"]){
+        [self exchangeChar:switchBtn];
     }
     return switchBtn;
+}
+
+//**  切换字符键盘  */
+-(void)exchangeChar:(SwitchBtn *)switchBtn
+{
+    self.XMKeyBoardType = XMkeyBoardType_charAndNumber ;
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+//**  切换拼音键盘  */
+-(void)exchangePinyin:(SwitchBtn *)switchBtn
+{
+    self.XMKeyBoardType = XMkeyBoardType_Word ;
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+//**  切换数字键盘  */
+-(void)exchangeNumber:(SwitchBtn *)switchBtn
+{
+    if(_creatXMKeyBoardType == XMkeyBoardType_RandomNumber){//如果创建的时候是随机数字键盘
+        self.XMKeyBoardType = XMkeyBoardType_RandomNumber; //切换随机数组键盘
+    }else{
+        //切换为数字键盘
+        self.XMKeyBoardType = XMkeyBoardType_Number;
+    }
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 #pragma mark Lazy
@@ -265,6 +285,20 @@
         _numberKeyboardstyleone.y = 0 ;
     }
     return _numberKeyboardstyleone;
+}
+
+//**  字符键盘  */
+-(XMCharKeyBoardView *)charKeyBoard
+{
+    if (!_charKeyBoard) {
+        _charKeyBoard = [[XMCharKeyBoardView alloc] initWithFrame:CGRectZero];
+        _charKeyBoard.delegate = self;
+        _charKeyBoard.width = self.width;
+        _charKeyBoard.height = keyBoardHeight;
+        _charKeyBoard.x = 0 ;
+        _charKeyBoard.y = 0 ;
+    }
+    return _charKeyBoard;
 }
 
 /**   字母键盘   */

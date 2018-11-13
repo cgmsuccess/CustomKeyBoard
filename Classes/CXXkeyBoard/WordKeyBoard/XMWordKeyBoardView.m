@@ -8,16 +8,18 @@
 
 #import "XMWordKeyBoardView.h"
 
-CGFloat topMargin = 10; //上面的距离
-CGFloat bottomMargin = 10; //下面的距离
-CGFloat leftMargin = 8; //最左边的距离
-CGFloat colMargin = 2;//行间距
-CGFloat rowMargin = 10;//列间距
-CGFloat topBtnW ; //按钮的宽度
-CGFloat topBtnH ; //按钮的高度
 
 @interface XMWordKeyBoardView()<XMkeyBoardViewDelegate>
-
+{
+    
+    CGFloat topMargin ; //上面的距离
+    CGFloat bottomMargin ; //下面的距离
+    CGFloat leftMargin ; //最左边的距离
+    CGFloat colMargin ;//行间距
+    CGFloat rowMargin ;//列间距
+    CGFloat topBtnW ; //按钮的宽度
+    CGFloat topBtnH ; //按钮的高度
+}
 /**   装载切割好了的字符串   */
 @property (nonatomic,strong)NSMutableArray *dataSource;
 
@@ -38,6 +40,9 @@ CGFloat topBtnH ; //按钮的高度
 
 /**   字母和数字的切换按钮 */
 @property (nonatomic,strong)SwitchBtn *switchBtn;
+
+/**   切换到字符按钮 */
+@property (nonatomic,strong)SwitchBtn *switchCharBtn;
 
 /**   装26个小写的字母 */
 @property (nonatomic,copy)NSMutableArray *lowercaseDataSorce ;
@@ -69,6 +74,12 @@ CGFloat topBtnH ; //按钮的高度
 {
     [super setUI];
     
+     topMargin = 10; //上面的距离
+     bottomMargin = 10; //下面的距离
+     leftMargin = 8; //最左边的距离
+     colMargin = 2;//行间距
+     rowMargin = 10;//列间距
+    
      topBtnW = (Kwidth - 2 * leftMargin - 9 * colMargin) / 10; //按钮的宽度
      topBtnH = (keyBoardHeight - 5 * topMargin) * 0.25 ; //按钮的高度
     
@@ -93,7 +104,7 @@ CGFloat topBtnH ; //按钮的高度
     [self addSubview:self.hiddenBtn];
     [self addSubview:self.spaceBtn];
     [self addSubview:self.determinBtn];
-    
+    [self addSubview:self.switchCharBtn];
     [self.capsLockBtn addTarget:self action:@selector(capslockExchange:) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -123,28 +134,39 @@ CGFloat topBtnH ; //按钮的高度
     self.deleteBtn.height = topBtnH;
     self.deleteBtn.y = topMargin + 2 * (topBtnH + rowMargin);
     
-    //切换数字和字母键盘
+    //切换数字和字母键盘 123
     self.switchBtn.x = leftMargin ;
     self.switchBtn.y = topMargin + 3 * (topBtnH + rowMargin);
     self.switchBtn.width = topBtnW * 1.5;
     self.switchBtn.height = topBtnH;
     
     //隐藏按钮布局
-    self.hiddenBtn.x = CGRectGetMaxX(self.switchBtn.frame) + colMargin;
+    self.switchCharBtn.x = CGRectGetMaxX(self.switchBtn.frame) + colMargin;
+    self.switchCharBtn.y = topMargin + 3 * (topBtnH + rowMargin);
+    self.switchCharBtn.width = topBtnW * 1.5;
+    self.switchCharBtn.height = topBtnH;
+    
+    //空格按钮布局
+    self.spaceBtn.x = CGRectGetMaxX(self.switchCharBtn.frame) + colMargin;
+    self.spaceBtn.y = topMargin + 3 * (topBtnH + rowMargin);
+    self.spaceBtn.width = 3 * topBtnW + 4 * colMargin;
+    self.spaceBtn.height = topBtnH;
+    
+    //字符按钮
+    self.hiddenBtn.x = colMargin + CGRectGetMaxX(self.spaceBtn.frame) ;
     self.hiddenBtn.y = topMargin + 3 * (topBtnH + rowMargin);
     self.hiddenBtn.width = topBtnW * 1.5;
     self.hiddenBtn.height = topBtnH;
     
-    //空格按钮布局
-    self.spaceBtn.x = CGRectGetMaxX(self.hiddenBtn.frame) + colMargin;
-    self.spaceBtn.y = topMargin + 3 * (topBtnH + rowMargin);
-    self.spaceBtn.width = 4.5 * topBtnW + 4 * colMargin;
-    self.spaceBtn.height = topBtnH;
+//    self.hiddenBtn.x = CGRectGetMaxX(self.switchBtn.frame) + colMargin;
+//    self.hiddenBtn.y = topMargin + 3 * (topBtnH + rowMargin);
+//    self.hiddenBtn.width = topBtnW * 1.5;
+//    self.hiddenBtn.height = topBtnH;
     
     //确定按钮
-    self.determinBtn.x = CGRectGetMaxX(self.spaceBtn.frame) + colMargin;
+    self.determinBtn.x = CGRectGetMaxX(self.hiddenBtn.frame) + colMargin;
     self.determinBtn.y = topMargin + 3 * (topBtnH + rowMargin);
-    self.determinBtn.width = CGRectGetMaxX(self.deleteBtn.frame) - CGRectGetMaxX(self.spaceBtn.frame) + colMargin;
+    self.determinBtn.width = CGRectGetMaxX(self.deleteBtn.frame) - CGRectGetMaxX(self.hiddenBtn.frame) + colMargin;
     self.determinBtn.height = topBtnH;
 }
 
@@ -239,6 +261,7 @@ CGFloat topBtnH ; //按钮的高度
         [_capsLockBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
         NSBundle *currenBundle = [NSBundle bundleForClass:[self class]];
         NSString *shiftImagePath = [currenBundle pathForResource:@"c_chaKeyboardShiftButton@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
+        
         NSString *xMshiftImagePath = [currenBundle pathForResource:@"CXXshift@2x.png" ofType:nil inDirectory:@"KeyBoardSource.Bundle"];
         // 普通图片
         UIImage *image     = [UIImage imageWithContentsOfFile:shiftImagePath];
@@ -247,6 +270,7 @@ CGFloat topBtnH ; //按钮的高度
         [_capsLockBtn setBackgroundImage:image forState:UIControlStateHighlighted];
         [_capsLockBtn setImage:image forState:UIControlStateNormal];
         [_capsLockBtn setImage:xmImage forState:UIControlStateSelected];
+        
         _capsLockBtn.contentMode = UIViewContentModeCenter;
     }
     return _capsLockBtn;
@@ -317,6 +341,21 @@ CGFloat topBtnH ; //按钮的高度
         _switchBtn.contentMode = UIViewContentModeCenter;
     }
     return _switchBtn;
+}
+
+-(SwitchBtn *)switchCharBtn
+{
+    if (!_switchCharBtn) {
+        _switchCharBtn = [self creatSwitchBtn];
+        _switchCharBtn.backgroundColor = [UIColor clearColor];
+        
+        [_switchCharBtn setBackgroundImage:[self nomImage:NO] forState:UIControlStateNormal];
+        [_switchCharBtn setBackgroundImage:[self nomImage:YES] forState:UIControlStateHighlighted];
+        [_switchCharBtn setTitle:@"字符" forState:UIControlStateNormal];
+        [_switchCharBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _switchCharBtn.contentMode = UIViewContentModeCenter;
+    }
+    return _switchCharBtn;
 }
 
 -(DetermineBtn *)determinBtn

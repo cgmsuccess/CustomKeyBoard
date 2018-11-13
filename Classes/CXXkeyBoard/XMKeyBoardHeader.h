@@ -19,6 +19,7 @@ typedef void(^XMCallBackBlock)(id userInfo);
 typedef NS_ENUM(NSInteger,XMkeyBoardType) {
     XMkeyBoardType_Default = 0 , //系统自带键盘
     XMkeyBoardType_Word , //字母键盘
+    XMkeyBoardType_charAndNumber , //字符数字键盘
     XMkeyBoardType_Number, //数字键盘
     XMkeyBoardType_OnlyNumber, //纯数字键盘
     XMkeyBoardType_RandomNumber, // 随机数字键盘

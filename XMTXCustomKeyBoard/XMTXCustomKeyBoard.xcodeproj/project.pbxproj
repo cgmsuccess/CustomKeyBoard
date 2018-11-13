@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23554DC12199105700474124 /* XMCharKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23554DC02199105700474124 /* XMCharKeyBoardView.m */; };
 		23581669219435B300CF8A77 /* XMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23581668219435B300CF8A77 /* XMTextField.m */; };
 		237652E6219578AB00D8A021 /* KeyBoardSource.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 237652E5219578AB00D8A021 /* KeyBoardSource.Bundle */; };
 		F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264A3218EFE9E00674D36 /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23554DBF2199105700474124 /* XMCharKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMCharKeyBoardView.h; sourceTree = "<group>"; };
+		23554DC02199105700474124 /* XMCharKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCharKeyBoardView.m; sourceTree = "<group>"; };
 		23581667219435B300CF8A77 /* XMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMTextField.h; sourceTree = "<group>"; };
 		23581668219435B300CF8A77 /* XMTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMTextField.m; sourceTree = "<group>"; };
 		237652E5219578AB00D8A021 /* KeyBoardSource.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KeyBoardSource.Bundle; sourceTree = "<group>"; };
@@ -105,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23554DBE2199101B00474124 /* CharKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				23554DBF2199105700474124 /* XMCharKeyBoardView.h */,
+				23554DC02199105700474124 /* XMCharKeyBoardView.m */,
+			);
+			path = CharKeyBoard;
+			sourceTree = "<group>";
+		};
 		F7A26496218EFE9E00674D36 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +184,7 @@
 		F7A26522218F0AFF00674D36 /* CXXkeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				23554DBE2199101B00474124 /* CharKeyBoard */,
 				F7D027DE2197DFA4002D2CDF /* NumKeyBoardStyleOne */,
 				F7A26523218F0AFF00674D36 /* CXXBaseKeyBoard */,
 				F7A26526218F0AFF00674D36 /* Tools */,
@@ -305,26 +318,29 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "陈桂民";
+				ORGANIZATIONNAME = "风吹裤衩";
 				TargetAttributes = {
 					F7A2649E218EFE9E00674D36 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = XZ557WUPWQ;
 						ProvisioningStyle = Automatic;
 					};
 					F7A264B6218EFE9E00674D36 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = HN267Y6RQZ;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F7A2649E218EFE9E00674D36;
 					};
 					F7A264C1218EFE9E00674D36 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = HN267Y6RQZ;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F7A2649E218EFE9E00674D36;
 					};
 				};
 			};
 			buildConfigurationList = F7A2649A218EFE9E00674D36 /* Build configuration list for PBXProject "XMTXCustomKeyBoard" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -382,6 +398,7 @@
 				F7A26551218F0AFF00674D36 /* XMNumberkeyBoard.m in Sources */,
 				F7A26553218F0AFF00674D36 /* XMNumStrongKeyBoard.m in Sources */,
 				F7A26554218F0AFF00674D36 /* XMKeyBoardView.m in Sources */,
+				23554DC12199105700474124 /* XMCharKeyBoardView.m in Sources */,
 				F7A264B2218EFE9E00674D36 /* main.m in Sources */,
 				F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */,
 				F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */,

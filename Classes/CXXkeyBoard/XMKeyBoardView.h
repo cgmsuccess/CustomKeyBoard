@@ -12,6 +12,7 @@
 #import "XMWordKeyBoardView.h" //字母键盘
 #import "XMNumStrongKeyBoard.h" //数字加强
 #import "XMNumberKeyBoardStyleOne.h" //数字键盘风格1
+#import "XMCharKeyBoardView.h" //字符键盘
 #import "XMKeyBoardHeader.h"
 @interface XMKeyBoardView : XMBasekeyBoardView<XMkeyBoardViewDelegate>
 
