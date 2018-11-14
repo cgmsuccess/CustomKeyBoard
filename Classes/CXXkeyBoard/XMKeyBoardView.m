@@ -18,8 +18,8 @@
 @property (nonatomic,strong)XMNumStrongKeyBoard *strongNumKeyBoard; /// 数字加强键盘
 @property (nonatomic,strong)XMNumberKeyBoardStyleOne *numberKeyboardstyleone;///数字键盘风格1
 @property (nonatomic,strong)XMCharKeyBoardView *charKeyBoard ; ///< 字符键盘
+@property (nonatomic,strong)XMCarNumHeaderKeyBoard *carNumHeaderKeyBoard ; ///< 车牌头键盘
 @property (nonatomic,assign)XMkeyBoardType creatXMKeyBoardType; ///记录创建的时候是什么键盘
-
 @end
 
 @implementation XMKeyBoardView
@@ -83,6 +83,9 @@
             break;
         case XMkeyBoardType_charAndNumber:
             [self addSubview:self.charKeyBoard];
+            break;
+        case XMkeyBoardType_CarNumHeader:
+            [self addSubview:self.carNumHeaderKeyBoard];
             break;
         default:
             break;
@@ -258,10 +261,22 @@
     return _strongNumKeyBoard;
 }
 
+-(XMCarNumHeaderKeyBoard *)carNumHeaderKeyBoard
+{
+    if (!_carNumHeaderKeyBoard) {
+        _carNumHeaderKeyBoard = [[XMCarNumHeaderKeyBoard alloc] initWithFrame:CGRectZero];
+        _carNumHeaderKeyBoard.delegate = self;
+        _carNumHeaderKeyBoard.height = keyBoardHeight;
+        _carNumHeaderKeyBoard.width  = self.width;
+        _carNumHeaderKeyBoard.x = 0 ;
+        _carNumHeaderKeyBoard.y = 0 ;
+    }
+    return _carNumHeaderKeyBoard;
+}
+
 //**  纯数字键盘  */
 -(XMNumberkeyBoard *)onlynumberKeyBoard
 {
-
     if (!_onlynumberKeyBoard) {
         _onlynumberKeyBoard = [[XMNumberkeyBoard alloc] initWithOnlyKeyBoard:CGRectZero];
         _onlynumberKeyBoard.delegate = self;

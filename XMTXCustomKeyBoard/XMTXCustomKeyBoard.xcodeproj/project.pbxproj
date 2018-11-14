@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		23554DC12199105700474124 /* XMCharKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23554DC02199105700474124 /* XMCharKeyBoardView.m */; };
 		23581669219435B300CF8A77 /* XMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23581668219435B300CF8A77 /* XMTextField.m */; };
+		235A42F6219A75D400747141 /* XMCarNumHeaderKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A42F5219A75D400747141 /* XMCarNumHeaderKeyBoard.m */; };
 		237652E6219578AB00D8A021 /* KeyBoardSource.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 237652E5219578AB00D8A021 /* KeyBoardSource.Bundle */; };
 		F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264A3218EFE9E00674D36 /* AppDelegate.m */; };
 		F7A264A7218EFE9E00674D36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A264A6218EFE9E00674D36 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		23554DC02199105700474124 /* XMCharKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCharKeyBoardView.m; sourceTree = "<group>"; };
 		23581667219435B300CF8A77 /* XMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMTextField.h; sourceTree = "<group>"; };
 		23581668219435B300CF8A77 /* XMTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMTextField.m; sourceTree = "<group>"; };
+		235A42F4219A75D400747141 /* XMCarNumHeaderKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMCarNumHeaderKeyBoard.h; sourceTree = "<group>"; };
+		235A42F5219A75D400747141 /* XMCarNumHeaderKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCarNumHeaderKeyBoard.m; sourceTree = "<group>"; };
 		237652E5219578AB00D8A021 /* KeyBoardSource.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KeyBoardSource.Bundle; sourceTree = "<group>"; };
 		F7A2649F218EFE9E00674D36 /* XMTXCustomKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMTXCustomKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A264A2218EFE9E00674D36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,15 @@
 				23554DC02199105700474124 /* XMCharKeyBoardView.m */,
 			);
 			path = CharKeyBoard;
+			sourceTree = "<group>";
+		};
+		235A42F3219A75A900747141 /* CarNumHeaderKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				235A42F4219A75D400747141 /* XMCarNumHeaderKeyBoard.h */,
+				235A42F5219A75D400747141 /* XMCarNumHeaderKeyBoard.m */,
+			);
+			path = CarNumHeaderKeyBoard;
 			sourceTree = "<group>";
 		};
 		F7A26496218EFE9E00674D36 = {
@@ -184,6 +196,7 @@
 		F7A26522218F0AFF00674D36 /* CXXkeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				235A42F3219A75A900747141 /* CarNumHeaderKeyBoard */,
 				23554DBE2199101B00474124 /* CharKeyBoard */,
 				F7D027DE2197DFA4002D2CDF /* NumKeyBoardStyleOne */,
 				F7A26523218F0AFF00674D36 /* CXXBaseKeyBoard */,
@@ -404,6 +417,7 @@
 				F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */,
 				F7A2654F218F0AFF00674D36 /* XMBasekeyBoardView.m in Sources */,
 				F7D027E12197DFBC002D2CDF /* XMNumberKeyBoardStyleOne.m in Sources */,
+				235A42F6219A75D400747141 /* XMCarNumHeaderKeyBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

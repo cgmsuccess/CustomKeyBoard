@@ -35,7 +35,7 @@
     self.xmTextfied2.xmKeyBoardType = XMkeyBoardType_Number;
     self.xmTextfied3.xmKeyBoardType = XMkeyBoardType_RandomNumber;
     self.xmTextfied4.xmKeyBoardType = XMkeyBoardType_IDCardNumber;
-    self.xmTextfied5.xmKeyBoardType = XMkeyBoardType_charAndNumber;
+    self.xmTextfied5.xmKeyBoardType = XMkeyBoardType_CarNumHeader;
 
 }
 
