@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23480D45219D1B3E0027A03F /* CarContentKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 23480D44219D1B3E0027A03F /* CarContentKeyBoard.m */; };
+		23480D48219D56950027A03F /* UITextField+CHTHealper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23480D47219D56950027A03F /* UITextField+CHTHealper.m */; };
 		23554DC12199105700474124 /* XMCharKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23554DC02199105700474124 /* XMCharKeyBoardView.m */; };
 		23581669219435B300CF8A77 /* XMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23581668219435B300CF8A77 /* XMTextField.m */; };
 		235A42F6219A75D400747141 /* XMCarNumHeaderKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A42F5219A75D400747141 /* XMCarNumHeaderKeyBoard.m */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		23480D43219D1B3E0027A03F /* CarContentKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarContentKeyBoard.h; sourceTree = "<group>"; };
 		23480D44219D1B3E0027A03F /* CarContentKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarContentKeyBoard.m; sourceTree = "<group>"; };
+		23480D46219D56950027A03F /* UITextField+CHTHealper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CHTHealper.h"; sourceTree = "<group>"; };
+		23480D47219D56950027A03F /* UITextField+CHTHealper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CHTHealper.m"; sourceTree = "<group>"; };
 		23554DBF2199105700474124 /* XMCharKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMCharKeyBoardView.h; sourceTree = "<group>"; };
 		23554DC02199105700474124 /* XMCharKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCharKeyBoardView.m; sourceTree = "<group>"; };
 		23581667219435B300CF8A77 /* XMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMTextField.h; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				F7A264A3218EFE9E00674D36 /* AppDelegate.m */,
 				F7A264A5218EFE9E00674D36 /* ViewController.h */,
 				F7A264A6218EFE9E00674D36 /* ViewController.m */,
+				23480D46219D56950027A03F /* UITextField+CHTHealper.h */,
+				23480D47219D56950027A03F /* UITextField+CHTHealper.m */,
 				F7A264A8218EFE9E00674D36 /* Main.storyboard */,
 				F7A264AB218EFE9E00674D36 /* Assets.xcassets */,
 				F7A264AD218EFE9E00674D36 /* LaunchScreen.storyboard */,
@@ -427,6 +432,7 @@
 				F7A26554218F0AFF00674D36 /* XMKeyBoardView.m in Sources */,
 				23554DC12199105700474124 /* XMCharKeyBoardView.m in Sources */,
 				F7A264B2218EFE9E00674D36 /* main.m in Sources */,
+				23480D48219D56950027A03F /* UITextField+CHTHealper.m in Sources */,
 				F7A264A4218EFE9E00674D36 /* AppDelegate.m in Sources */,
 				F7A26552218F0AFF00674D36 /* XMWordKeyBoardView.m in Sources */,
 				F7A2654F218F0AFF00674D36 /* XMBasekeyBoardView.m in Sources */,

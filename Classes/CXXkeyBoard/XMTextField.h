@@ -12,7 +12,7 @@
 
 @property (nonatomic,assign)XMkeyBoardType xmKeyBoardType; ///键盘属性 (数字，字母，随机密码键盘 等)
 
-@property (nonatomic,assign)NSInteger inpuptLenth; ///限制键盘的输入长度 
+@property (nonatomic,assign)NSInteger maxInpuptLenth; ///限制键盘的输入长度 
 
 @property (nonatomic,copy)XMCallBackBlock inputTextBlock; ///< 文字改变时候的回调
 

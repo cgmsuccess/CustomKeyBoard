@@ -42,9 +42,9 @@
 
 -(void)exhcnaghe
 {
-    if (self.inpuptLenth) {
-        if (self.text.length > self.inpuptLenth - 1){
-            self.text = [self.text substringToIndex: self.inpuptLenth];
+    if (self.maxInpuptLenth) {
+        if (self.text.length > self.maxInpuptLenth - 1){
+            self.text = [self.text substringToIndex: self.maxInpuptLenth];
         }
     }
     

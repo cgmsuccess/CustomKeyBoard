@@ -35,12 +35,8 @@
     NSMutableArray *dataSource = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"",@"0",@"."].mutableCopy;
     for (int i = 0; i < dataSource.count; i++) {
         NSString *str = dataSource[i];
-        UIButton *btn;
-        if (i == 9) {
-           btn = [self creatDetermineBtnBtn];
-        }else{
-            btn = [self creatNormalBtn];
-        }
+        UIButton *btn;  
+        btn = [self creatNormalBtn];
         [btn setTitle:str forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         btn.layer.borderWidth = 0.25;

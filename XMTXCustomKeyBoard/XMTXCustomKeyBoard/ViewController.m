@@ -9,19 +9,19 @@
 #import "ViewController.h"
 #import "XMTextField.h"
 #import "XMWordKeyBoardView.h"
-@interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied;
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet XMTextField *xmtextfield1;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileOne;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileTwo;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileThree;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileFour;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileFive;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileSix;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileSeven;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileEight;
+@property (weak, nonatomic) IBOutlet XMTextField *textfileNine;
 
-@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied2;
-
-@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied3;
-
-@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied4;
-
-@property (weak, nonatomic) IBOutlet XMTextField *xmTextfied5;
 @end
 
 @implementation ViewController
@@ -30,23 +30,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.xmTextfied.xmKeyBoardType = XMkeyBoardType_Word;
-    self.xmtextfield1.xmKeyBoardType = XMkeyBoardType_StrongNumber;
-    self.xmTextfied2.xmKeyBoardType = XMkeyBoardType_Number;
-    self.xmTextfied3.xmKeyBoardType = XMkeyBoardType_RandomNumber;
-    self.xmTextfied4.xmKeyBoardType = XMkeyBoardType_IDCardNumber;
-    self.xmTextfied5.xmKeyBoardType = XMkeyBoardType_CarContentNumber;
-
-}
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self.view endEditing:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.textfileOne.xmKeyBoardType = XMkeyBoardType_OnlyNumber;
+    self.textfileTwo.xmKeyBoardType = XMkeyBoardType_NumberStyleOne;
+    self.textfileThree.xmKeyBoardType = XMkeyBoardType_StrongNumber;
+    self.textfileFour.xmKeyBoardType = XMkeyBoardType_IDCardNumber;
+    self.textfileFive.xmKeyBoardType = XMkeyBoardType_Word;
+    self.textfileSix.xmKeyBoardType = XMkeyBoardType_charAndNumber;
+    self.textfileSeven.xmKeyBoardType = XMkeyBoardType_RandomNumber;
+    self.textfileEight.xmKeyBoardType = XMkeyBoardType_CarNumHeader;
+    self.textfileNine.xmKeyBoardType = XMkeyBoardType_Default;
+    
+    
+    ///第一个输入框限制长度 为5
+    self.textfileOne.maxInpuptLenth = 5;
+    
+    ///输入回调
+    self.textfileOne.inputTextBlock = ^(id userInfo) {
+        XMTextField *tf = (XMTextField *)userInfo;
+        XMLog(@"tf.text = %@",tf.text);
+    };
 }
 
 
