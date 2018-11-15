@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23480D45219D1B3E0027A03F /* CarContentKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 23480D44219D1B3E0027A03F /* CarContentKeyBoard.m */; };
 		23554DC12199105700474124 /* XMCharKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23554DC02199105700474124 /* XMCharKeyBoardView.m */; };
 		23581669219435B300CF8A77 /* XMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23581668219435B300CF8A77 /* XMTextField.m */; };
 		235A42F6219A75D400747141 /* XMCarNumHeaderKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A42F5219A75D400747141 /* XMCarNumHeaderKeyBoard.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23480D43219D1B3E0027A03F /* CarContentKeyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarContentKeyBoard.h; sourceTree = "<group>"; };
+		23480D44219D1B3E0027A03F /* CarContentKeyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarContentKeyBoard.m; sourceTree = "<group>"; };
 		23554DBF2199105700474124 /* XMCharKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMCharKeyBoardView.h; sourceTree = "<group>"; };
 		23554DC02199105700474124 /* XMCharKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCharKeyBoardView.m; sourceTree = "<group>"; };
 		23581667219435B300CF8A77 /* XMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMTextField.h; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23480D42219D1B170027A03F /* CarContentKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				23480D43219D1B3E0027A03F /* CarContentKeyBoard.h */,
+				23480D44219D1B3E0027A03F /* CarContentKeyBoard.m */,
+			);
+			path = CarContentKeyBoard;
+			sourceTree = "<group>";
+		};
 		23554DBE2199101B00474124 /* CharKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +208,7 @@
 		F7A26522218F0AFF00674D36 /* CXXkeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				23480D42219D1B170027A03F /* CarContentKeyBoard */,
 				235A42F3219A75A900747141 /* CarNumHeaderKeyBoard */,
 				23554DBE2199101B00474124 /* CharKeyBoard */,
 				F7D027DE2197DFA4002D2CDF /* NumKeyBoardStyleOne */,
@@ -406,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23581669219435B300CF8A77 /* XMTextField.m in Sources */,
+				23480D45219D1B3E0027A03F /* CarContentKeyBoard.m in Sources */,
 				F7A26550218F0AFF00674D36 /* UIView+XMFrame.m in Sources */,
 				F7A264A7218EFE9E00674D36 /* ViewController.m in Sources */,
 				F7A26551218F0AFF00674D36 /* XMNumberkeyBoard.m in Sources */,

@@ -14,6 +14,7 @@
 #import "XMNumberKeyBoardStyleOne.h" //数字键盘风格1
 #import "XMCharKeyBoardView.h" //字符键盘
 #import "XMCarNumHeaderKeyBoard.h" //车牌头键盘
+#import "CarContentKeyBoard.h"//车牌号码键盘
 #import "XMKeyBoardHeader.h"
 @interface XMKeyBoardView : XMBasekeyBoardView<XMkeyBoardViewDelegate>
 

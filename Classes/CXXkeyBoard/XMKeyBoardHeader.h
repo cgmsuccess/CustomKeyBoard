@@ -26,7 +26,8 @@ typedef NS_ENUM(NSInteger,XMkeyBoardType) {
     XMkeyBoardType_StrongNumber,// 数字加强键盘
     XMkeyBoardType_NumberStyleOne, //数字键盘风格1
     XMkeyBoardType_IDCardNumber,// 身份证键盘
-    XMkeyBoardType_CarNumHeader,// 汽车车牌头部键盘
+    XMkeyBoardType_CarNumHeader,// 汽车车牌头部键盘  川 粤 云 贵 。。。。
+    XMkeyBoardType_CarContentNumber,///车牌数字键盘
     XMkeyBoardType_Emotion,// emoji 键盘
 };
 

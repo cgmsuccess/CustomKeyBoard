@@ -19,6 +19,7 @@
 @property (nonatomic,strong)XMNumberKeyBoardStyleOne *numberKeyboardstyleone;///数字键盘风格1
 @property (nonatomic,strong)XMCharKeyBoardView *charKeyBoard ; ///< 字符键盘
 @property (nonatomic,strong)XMCarNumHeaderKeyBoard *carNumHeaderKeyBoard ; ///< 车牌头键盘
+@property (nonatomic,strong)CarContentKeyBoard *carContentNumKeyBoard ; ///< 车牌号码键盘
 @property (nonatomic,assign)XMkeyBoardType creatXMKeyBoardType; ///记录创建的时候是什么键盘
 @end
 
@@ -87,6 +88,9 @@
         case XMkeyBoardType_CarNumHeader:
             [self addSubview:self.carNumHeaderKeyBoard];
             break;
+        case XMkeyBoardType_CarContentNumber:
+            [self addSubview:self.carContentNumKeyBoard];
+            break;
         default:
             break;
     }
@@ -97,6 +101,14 @@
 -(UIButton *)xmClickConten:(UIButton *)contenBtn
 {
     if ([self.delegate respondsToSelector:@selector(xmClickConten:)]) {
+        switch (self.XMKeyBoardType) {
+            case XMkeyBoardType_CarNumHeader:
+                [self exhcnageCarContent:nil]; ///切换输入车牌号码的键盘
+                break;
+                
+            default:
+                break;
+        }
         [self.delegate xmClickConten:contenBtn];
     }
     return contenBtn;
@@ -168,6 +180,10 @@
         [self exchangePinyin:switchBtn];
     }else if([switchBtn.titleLabel.text isEqualToString: @"字符"]){
         [self exchangeChar:switchBtn];
+    }else if([switchBtn.titleLabel.text isEqualToString: @"<-"]){
+        [self exhcnageCarheader:switchBtn];
+    }else if([switchBtn.titleLabel.text isEqualToString: @"更多"]){
+        [self exhcnageCarContent:switchBtn];
     }
     return switchBtn;
 }
@@ -199,6 +215,24 @@
         //切换为数字键盘
         self.XMKeyBoardType = XMkeyBoardType_Number;
     }
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+//**  切换车牌省份键盘  */
+-(void)exhcnageCarheader:(SwitchBtn *)switchBtn
+{
+    self.XMKeyBoardType = XMkeyBoardType_CarNumHeader ;
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+//**  切换车牌省份键盘  */
+-(void)exhcnageCarContent:(SwitchBtn *)switchBtn
+{
+    self.XMKeyBoardType = XMkeyBoardType_CarContentNumber ;
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self setNeedsLayout];
     [self layoutIfNeeded];
@@ -261,6 +295,7 @@
     return _strongNumKeyBoard;
 }
 
+//**  车牌省份 键盘  */
 -(XMCarNumHeaderKeyBoard *)carNumHeaderKeyBoard
 {
     if (!_carNumHeaderKeyBoard) {
@@ -272,6 +307,20 @@
         _carNumHeaderKeyBoard.y = 0 ;
     }
     return _carNumHeaderKeyBoard;
+}
+
+//**  车牌号码键盘  */
+-(CarContentKeyBoard *)carContentNumKeyBoard
+{
+    if (!_carContentNumKeyBoard) {
+        _carContentNumKeyBoard = [[CarContentKeyBoard alloc] initWithFrame:CGRectZero];
+        _carContentNumKeyBoard.delegate = self;
+        _carContentNumKeyBoard.width = self.width;
+        _carContentNumKeyBoard.height = keyBoardHeight;
+        _carContentNumKeyBoard.x = 0 ;
+        _carContentNumKeyBoard.y = 0 ;
+    }
+    return _carContentNumKeyBoard;
 }
 
 //**  纯数字键盘  */
