@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "XMTextField.h"
-#import "XMWordKeyBoardView.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
