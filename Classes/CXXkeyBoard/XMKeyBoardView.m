@@ -247,7 +247,7 @@
         _cardIDKeyBoard = [[XMNumberkeyBoard alloc] initWithIDCard:CGRectZero];
         _cardIDKeyBoard.delegate = self;
         _cardIDKeyBoard.height = keyBoardHeight;
-        _cardIDKeyBoard.width  = self.width;
+        _cardIDKeyBoard.width  = Kwidth;
         _cardIDKeyBoard.x = 0 ;
         _cardIDKeyBoard.y = 0 ;
     }
@@ -261,7 +261,7 @@
         _numKeyBoard = [[XMNumberkeyBoard alloc] init];
         _numKeyBoard.delegate = self;
         _numKeyBoard.height = keyBoardHeight;
-        _numKeyBoard.width  = self.width;
+        _numKeyBoard.width  = Kwidth;
         _numKeyBoard.x = 0 ;
         _numKeyBoard.y = 0 ;
     }
@@ -274,7 +274,7 @@
         _randomNumKeyBoard = [[XMNumberkeyBoard alloc] initWithFrameRandom:CGRectZero];
         _randomNumKeyBoard.delegate = self;
         _randomNumKeyBoard.height = keyBoardHeight;
-        _randomNumKeyBoard.width  = self.width;
+        _randomNumKeyBoard.width  = Kwidth;
         _randomNumKeyBoard.x = 0 ;
         _randomNumKeyBoard.y = 0 ;
     
@@ -288,7 +288,7 @@
         _strongNumKeyBoard = [[XMNumStrongKeyBoard alloc] init];
         _strongNumKeyBoard.delegate = self;
         _strongNumKeyBoard.height = keyBoardHeight;
-        _strongNumKeyBoard.width  = self.width;
+        _strongNumKeyBoard.width  = Kwidth;
         _strongNumKeyBoard.x = 0 ;
         _strongNumKeyBoard.y = 0 ;
     }
@@ -302,7 +302,7 @@
         _carNumHeaderKeyBoard = [[XMCarNumHeaderKeyBoard alloc] initWithFrame:CGRectZero];
         _carNumHeaderKeyBoard.delegate = self;
         _carNumHeaderKeyBoard.height = keyBoardHeight;
-        _carNumHeaderKeyBoard.width  = self.width;
+        _carNumHeaderKeyBoard.width  = Kwidth;
         _carNumHeaderKeyBoard.x = 0 ;
         _carNumHeaderKeyBoard.y = 0 ;
     }
@@ -315,7 +315,7 @@
     if (!_carContentNumKeyBoard) {
         _carContentNumKeyBoard = [[CarContentKeyBoard alloc] initWithFrame:CGRectZero];
         _carContentNumKeyBoard.delegate = self;
-        _carContentNumKeyBoard.width = self.width;
+        _carContentNumKeyBoard.width = Kwidth;
         _carContentNumKeyBoard.height = keyBoardHeight;
         _carContentNumKeyBoard.x = 0 ;
         _carContentNumKeyBoard.y = 0 ;
@@ -330,7 +330,7 @@
         _onlynumberKeyBoard = [[XMNumberkeyBoard alloc] initWithOnlyKeyBoard:CGRectZero];
         _onlynumberKeyBoard.delegate = self;
         _onlynumberKeyBoard.height = keyBoardHeight;
-        _onlynumberKeyBoard.width  = self.width;
+        _onlynumberKeyBoard.width  = Kwidth;
         _onlynumberKeyBoard.x = 0 ;
         _onlynumberKeyBoard.y = 0 ;
     }
@@ -343,7 +343,7 @@
     if (!_numberKeyboardstyleone) {
         _numberKeyboardstyleone = [[XMNumberKeyBoardStyleOne alloc] initWithFrame:CGRectZero];
         _numberKeyboardstyleone.delegate = self;
-        _numberKeyboardstyleone.width = self.width;
+        _numberKeyboardstyleone.width = Kwidth;
         _numberKeyboardstyleone.height = keyBoardHeight;
         _numberKeyboardstyleone.x = 0 ;
         _numberKeyboardstyleone.y = 0 ;
@@ -357,7 +357,7 @@
     if (!_charKeyBoard) {
         _charKeyBoard = [[XMCharKeyBoardView alloc] initWithFrame:CGRectZero];
         _charKeyBoard.delegate = self;
-        _charKeyBoard.width = self.width;
+        _charKeyBoard.width = Kwidth;
         _charKeyBoard.height = keyBoardHeight;
         _charKeyBoard.x = 0 ;
         _charKeyBoard.y = 0 ;
@@ -372,7 +372,7 @@
         _wordKeyBoard = [[XMWordKeyBoardView alloc] init];
         _wordKeyBoard.delegate = self;
         _wordKeyBoard.height = keyBoardHeight ;
-        _wordKeyBoard.width  = self.width;
+        _wordKeyBoard.width  = Kwidth;
     }
     return _wordKeyBoard;
 }
